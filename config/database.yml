@@ -10,7 +10,11 @@ default: &default
   pool: 5
   username: root
   password: Juan9173
+  host: localhost
 
+production:
+  <<: *default
+  database: otis_production
 
 development:
   <<: *default
@@ -23,6 +27,4 @@ test:
   <<: *default
   database: otis_test
 
-production:
-  <<: *default
-  database: otis_production
+
