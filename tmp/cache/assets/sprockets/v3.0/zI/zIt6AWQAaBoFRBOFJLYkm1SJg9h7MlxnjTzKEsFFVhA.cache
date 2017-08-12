@@ -1,0 +1,12 @@
+I"â(function() {
+  jQuery(document).on('turbolinks:load', function() {
+    return $('.scroller').slick({
+      autoplay: true,
+      dots: false,
+      pauseOnHover: false,
+      pauseOnFocus: false
+    });
+  });
+
+}).call(this);
+:ET

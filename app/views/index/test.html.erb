@@ -1,0 +1,30 @@
+<div class="test">
+	<div class="scroller_container">
+		<%= form_for(:data, :url => {:action=>"result"}, html: {id: :testForm}) do |form| %>
+			<div class="scroller">
+				<% numbering = 0 %>
+				<% @questions.each do |question| %>
+					<% numbering = numbering + 1 %>
+					<div>
+					    <p>Pregunta # <%= numbering %></p>
+					    <p><%= question.description %></p>
+					    <br>
+					    <% question.answers.each do |answer| %>
+					      <% if question.question_type ==="Cerrada" %>
+						    <p>
+						      <p><%= radio_button_tag "Preg"+question.id.to_s, "#{answer.id}" %><%= answer.description %><%= answer.message %></p>
+						    </p>
+						  <% end %>
+						  <% if question.question_type ==="Abierta" %>
+						    <%= form.text_field answer.id, name: "Preg"+question.id.to_s  %>
+						  <% end %>      
+					      <br>
+					    <% end %>
+					</div>
+				<% end %>
+			</div>
+			<%= form.submit %>
+		<% end %>
+	</div>
+	<div><span id="time">Iniciando la prueba</span></div>
+</div>

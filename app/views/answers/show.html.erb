@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @answer.question %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @answer.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @answer.image %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @answer.value %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @answer.content %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @answer.message %>
+</p>
+
+<%= link_to 'Edit', edit_answer_path(@answer) %> |
+<%= link_to 'Back', answers_path %>

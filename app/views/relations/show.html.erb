@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Test:</strong>
+  <%= @relation.test %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @relation.question %>
+</p>
+
+<%= link_to 'Edit', edit_relation_path(@relation) %> |
+<%= link_to 'Back', relations_path %>

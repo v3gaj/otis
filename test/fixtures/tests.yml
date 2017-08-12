@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  indentifier: MyString
+  description: MyString
+  time: 2017-07-13 18:56:10
+
+two:
+  indentifier: MyString
+  description: MyString
+  time: 2017-07-13 18:56:10

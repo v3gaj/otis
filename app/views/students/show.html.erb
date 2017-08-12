@@ -1,0 +1,52 @@
+<h1><%= @student.name %> <%= @student.lastname %> <%= @student.second_lastname %></h1>
+
+<div class="studentsWrapper">
+	<ul class="listInformation">
+		<h2>Información</h2>
+		<% if @student.identifier.present? %>
+			<li>Identificación:</li><span> <%= @student.identifier %></span><br>
+		<%end%>
+		<% if @student.gender.present? %>
+			<li>Genero:</li><span> <%= @student.gender %></span><br>
+		<%end%>
+		<% if @student.birth_date.present? %>
+			<li>Fecha de Nacimiento:</li><span> <%= @student.birth_date %></span><br>
+		<%end%>
+		<% if @student.career.present? %>
+			<li>Carrera de Interés:</li><span> <%= @student.career %></span><br>
+		<%end%>
+		<% if @student.high_school.present? %>
+			<li>Colegio de Proveniencia:</li><span> <%= @student.high_school %></span><br>
+		<%end%>
+	</ul>
+
+	<ul class="listResults">
+		<h2>Resultados</h2>
+		<li>Tipo de Prueba:</li><span> <%= @student.test %></span><br>
+		<li>Cantidad de Preguntas:</li><span> <%= @student.results[0]['total'] %></span><br>
+		<li>Respuestas Correctas:</li><span class="correct"><%= @student.results[0]['correct'] %> / <%= @student.results[0]['total'] %></span><br>
+		<li>Respuestas Incorrectas:</li><span class="incorrect"><%= @student.results[0]['incorrect'] %> / <%= @student.results[0]['total'] %></span><br>
+		<li>Clasificación de Respuestas:</li><br>
+		<% @student.classifications.each do |classif| %>
+	       	<p><%= classif['classification'] %>:</p> <span><%= classif['correct'] %> / <%= classif['quantity'] %></span>
+	       	<br>
+	    <% end %>
+	</ul>
+	
+</div>
+
+<div class="studentsAnswersWrapper">
+	<h2>Detalle de la Prueba</h2>
+	<% @student.ans.each do |answer| %>
+		<div>
+			<p><%= answer['question'] %></p>
+	       	<p>Respuesta del estudiante: <span><%= answer['answer'] %></span></p>
+	       	<p>Respuesta Correcta: <span><%= answer['correct'] %></span></p>
+	       	<p>Valor: <span><%= answer['value'] %></span></p>
+		</div>
+       	
+    <% end %>
+</div>
+
+<%= link_to 'Atras', students_path, class: "button" %>
+

@@ -1,0 +1,27 @@
+<%= form_with(model: career, local: true) do |form| %>
+  <% if career.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(career.errors.count, "error") %> prohibited this career from being saved:</h2>
+
+      <ul>
+      <% career.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :career %>
+    <%= form.text_field :career, id: :career_career %>
+  </div>
+
+  <div class="field">
+    <%= form.label :test_id %>
+    <%= form.select :test_id, options_for_select(Test.all.map{|p|[p.indentifier, p.id]}, :selected => form.object.test_id), prompt: "Select", id: :test_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

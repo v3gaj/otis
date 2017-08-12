@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Otis</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  </head>
+
+  <body>
+  	<header>
+      <%= image_tag 'logo.png'%> 
+      <nav>
+        <ul>
+          <li><%= active_link_to "Inicio", root_path, active: :exclusive %></li>
+          <% if user_signed_in? %>
+            <li><%= active_link_to "Encuestas", students_path, active: :exclusive %></li>
+            <li><%= active_link_to "Preguntas", questions_path, active: :exclusive %></li>
+            <li><%= active_link_to "Pruebas", tests_path, active: :exclusive %></li>
+            <li><%= active_link_to "Carreras", careers_path, active: :exclusive %></li>
+          <%end%>  
+          <% if user_signed_in? && current_user.role ==="admin" %>
+            <li><%= active_link_to "Crear Cuenta", :controller => :users, :action => :new %></li>
+          <%end%> 
+          <% if user_signed_in? %>
+            <li><%= active_link_to destroy_user_session_path, method: :delete do %><i class="fa fa-sign-out" aria-hidden="true"></i><% end %></li>
+          <%else%>
+            <li><%= active_link_to new_user_session_path do %><i class="fa fa-sign-in" aria-hidden="true"></i><% end %></li>
+          <%end%>
+        </ul>
+      </nav>
+    </header>
+    <div class="mainWrapper">
+      <%= yield %>
+    </div>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  </body>
+</html>

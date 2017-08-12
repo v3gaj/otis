@@ -1,0 +1,11 @@
+<div>Type</div>
+
+<h1>Tests Available</h1>
+<% for test in @tests %>
+	<%= form_for(@test, :url => {:action=>"start"}) do |form| %> 	
+	    <tr>
+	        <td><%= form.hidden_field test.id, name: "id", value: test.id %></td>
+	        <td><%= form.submit test.indentifier %></td>
+	    </tr>
+	<% end %>
+<% end %>

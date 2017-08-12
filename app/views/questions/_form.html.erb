@@ -1,0 +1,42 @@
+<%= form_with(model: question, local: true) do |form| %>
+  <% if question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(question.errors.count, "error") %> prohibited this question from being saved:</h2>
+
+      <ul>
+      <% question.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :classification_id %>
+    <%= form.select :classification_id, options_for_select(Classification.all.map{|p|[p.description, p.id]}, :selected => form.object.classification_id), prompt: "Select" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question_type %>
+    <%= form.select :question_type, options_for_select([ "Abierta", "Cerrada"], :selected => form.object.question_type), prompt: "Select" , class: "content_clear"%>
+  </div>
+
+  <div class="field">
+    <%= form.label :identifier %>
+    <%= form.text_field :identifier, id: :question_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :question_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image, id: :question_image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

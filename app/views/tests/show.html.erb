@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Indentifier:</strong>
+  <%= @test.indentifier %>
+</p>
+
+<p>
+  <strong>Preguntas:</strong>
+  <%= @quantity %>
+</p>
+
+<p>
+  <strong>Clasificaciones:</strong>
+	<% @classifications.each do |classif| %>
+	  <br><%= classif['classification'] %>: <%= classif['quantity']  %>
+	<% end %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @test.description %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @test.time %>
+</p>
+
+<%= link_to 'Edit', edit_test_path(@test) %> |
+<%= link_to 'Back', tests_path %>
+
+<%= render :file => '/relations/index' %>

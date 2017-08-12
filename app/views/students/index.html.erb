@@ -1,0 +1,61 @@
+<h1>Encuestas</h1>
+
+<div class="filtersWrapper">
+
+	<%= form_for(:data, :url => {:action=>"index"}) do |form| %>
+
+		<div class="field">
+			<%= form.label "Filtrar por: " %>
+			<%= form.select :filter, options_for_select(["Nombre", "Primer Apellido", "Segundo Apellido", "Identificacion", "Carrera"], default: nil), prompt: "Seleccionar" %>
+			<%= form.text_field :value %>
+		</div>
+
+		<div class="field">
+			<%= form.label "Filtrar por Fechas: " %>
+			<%= form.date_select :start, {:prompt => {:month => 'Mes', :day => 'Dia', :year => 'Año'}, default: nil, required: true, :start_year=>2017, :order => [:month, :day, :year]} %><br>
+			<%= form.date_select :end, {:prompt => {:month => 'Mes', :day => 'Dia', :year => 'Año'}, default: nil, required: true, :start_year=>2017, :order => [:month, :day, :year]} %>
+		</div>
+
+		<div class="actions">
+			<%= form.submit "Filtrar" %>
+
+		</div>
+	<% end %>
+	<p id="notice"><%= notice %></p>
+</div>
+
+<div class="studentsWrapper">
+	<table>
+	  <thead>
+	    <tr>
+	      <th>Nombre</th>
+	      <th>Carrera</th>
+	      <th>Prueba</th>
+	      <th>Correctas</th>
+	      <th>Incorrectas</th>
+	      <th>Clasificaciones</th>
+	      <th>Acciones</th>
+	    </tr>
+	  </thead>
+
+	  <tbody>
+	    <% @students.each do |student| %>
+	      <tr>
+	        <td><%= student.name %> <%= student.lastname %> <%= student.second_lastname %></td>
+	        <td><%= student.career %></td>
+	        <td><%= student.test %></td>
+	        <td><span class="correct"><%= student.results[0]['correct'] %> / <%= student.results[0]['total'] %></span></td>
+	        <td><span class="incorrect"><%= student.results[0]['incorrect'] %> / <%= student.results[0]['total'] %></span></td>
+	        <td>
+		        <% student.classifications.each do |classif| %>
+		        	<p><%= classif['classification'] %>:</p> <span><%= classif['correct'] %> / <%= classif['quantity'] %></span>
+		        	<br>
+		        <% end %>
+		    </td>
+	        <td><%= link_to 'Detalles', student, class: "button" %></td>
+
+
+	    <% end %>
+	  </tbody>
+	</table>
+</div>

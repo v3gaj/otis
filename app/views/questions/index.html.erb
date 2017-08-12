@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Preguntas</h1>
+
+<%= link_to 'New Question', new_question_path, class: "button" %>
+
+<div class="questionsWrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>Descripción</th>
+        <th>Tipo</th>
+        <th>Clasificación</th>
+        <th>Descripción</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @questions.each do |question| %>
+        <tr>
+          <td><%= question.identifier %></td>
+          <td><%= question.classification.description %></td>
+          <td><%= question.question_type %></td>
+          <td><p><%= question.description %></p></td>
+          <td><%= link_to 'Mostrar', question, class: "button" %>
+          <%= link_to 'Editar', edit_question_path(question), class: "button" %>
+          <%= link_to 'Eliminar', question, method: :delete, data: { confirm: 'Are you sure?' }, class: "button" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

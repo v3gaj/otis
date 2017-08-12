@@ -1,0 +1,47 @@
+<%= form_for(@student, :url => {:action=>"submit"}) do |form| %>
+
+  <div class="field">
+    <%= form.label "Nombre" %>
+    <%= form.text_field :name, required: true, id: :student_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label "Primer Apellido" %>
+    <%= form.text_field :lastname, required: true, id: :student_lastname %>
+  </div>
+
+  <div class="field">
+    <%= form.label "Segundo Apellido" %>
+    <%= form.text_field :second_lastname, id: :student_second_lastname %>
+  </div>
+
+  <div class="field">
+    <%= form.label "Id" %>
+    <%= form.text_field :identifier, id: :student_identifier %>
+  </div>
+
+  <div class="field">
+    <%= form.label "Genero" %>
+    <%= form.select :gender, options_for_select([ "Masculino", "Femenino"], :selected => form.object.gender), prompt: "Seleccionar" %>
+  </div>
+
+  <div class="field">
+    <%= form.label "Fecha de Nacimiento" %>
+    <%= form.date_select :birth_date, {:include_blank => true, :default => nil, required: true}, id: :student_birth_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label "Carrera" %>
+    <%= form.select :career, options_for_select(Career.all.map{|p|[p.career]}), prompt: "Seleccionar" %>
+  </div>
+
+  <div class="field">
+    <%= form.label "Colegio" %>
+    <%= form.text_field :high_school, id: :student_high_school %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Seleccionar Prueba" %>
+  </div>
+<% end %>
+

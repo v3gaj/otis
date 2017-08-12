@@ -1,0 +1,39 @@
+<%= form_for([@question, @answer], remote: true) do |form| %>
+
+  <% if @question.question_type ==="Cerrada" %>
+    <div class="field">
+      <%= form.label :description %>
+      <%= form.text_field :description, id: :answer_description, class: "content_clear" %>
+    </div>
+
+    <div class="field">
+      <%= form.label :value %>
+      <%= form.check_box :value, id: :answer_value, class: "content_clear" %>
+    </div>
+  <% end %>  
+
+  <% if @question.question_type ==="Abierta" %>
+    <div class="field">
+      <%= form.label :content %>
+      <%= form.text_field :content, id: :answer_content, class: "content_clear" %>
+    </div>
+
+    <div class="field">
+      <%= form.label :message %>
+      <%= form.text_field :message, id: :answer_message, class: "content_clear" %>
+    </div>
+  <% end %> 
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image, id: :answer_image, class: "content_clear" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+  <div class="answer_errors"><%= render 'errors' %></div>
+
+<% end %>
+

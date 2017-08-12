@@ -1,0 +1,8 @@
+<% if @answer.errors.any? %>
+  $('.answer_errors').html("<%= j (render 'errors') %>");
+<% else %>
+	$(".answer_clear").val('');
+	$(".answer_table").html("<%= j (render 'table') %>");
+	$(".answer_form").html("<p class='content_notice'>Respuesta creada exitosamente.</p>");
+	$(".answer_notice").delay(3000).hide(0);
+<% end %>

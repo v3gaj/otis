@@ -1,0 +1,56 @@
+<%= form_for @user, :url => {:action=>"create"} do |f| %>
+	
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :second_last_name %>
+    <%= f.text_field :second_last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :role %>
+    <%= f.select :role, options_for_select([ "Admin", "User"], :selected => f.object.role), prompt: "Select" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %>
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<% if @user.errors.any? %>
+	<div id="error_explanation">
+	  <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+	  <ul>
+	  <% @user.errors.full_messages.each do |message| %>
+	    <li><%= message %></li>
+	  <% end %>
+	  </ul>
+	</div>
+<% end %>
