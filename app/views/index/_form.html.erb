@@ -1,5 +1,17 @@
 <%= form_for(@student, :url => {:action=>"submit"}) do |form| %>
 
+  <% if @student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this relation from being saved:</h2>
+
+      <ul>
+      <% @student.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <div class="field">
     <%= form.label "Nombre" %>
     <%= form.text_field :name, required: true, id: :student_name %>
@@ -12,7 +24,7 @@
 
   <div class="field">
     <%= form.label "Segundo Apellido" %>
-    <%= form.text_field :second_lastname, id: :student_second_lastname %>
+    <%= form.text_field :second_lastname, required: true, id: :student_second_lastname %>
   </div>
 
   <div class="field">
@@ -22,12 +34,12 @@
 
   <div class="field">
     <%= form.label "Genero" %>
-    <%= form.select :gender, options_for_select([ "Masculino", "Femenino"], :selected => form.object.gender), prompt: "Seleccionar" %>
+    <%= form.select :gender, options_for_select([ "Masculino", "Femenino"], :selected => form.object.gender),:default => nil, required: true %>
   </div>
 
   <div class="field">
     <%= form.label "Fecha de Nacimiento" %>
-    <%= form.date_select :birth_date, {:include_blank => true, :default => nil, required: true}, id: :student_birth_date %>
+    <%= form.date_select :birth_date, {:include_blank => true, :default => nil}, required: true, id: :student_birth_date %>
   </div>
 
   <div class="field">
@@ -41,7 +53,7 @@
   </div>
 
   <div class="actions">
-    <%= form.submit "Seleccionar Prueba" %>
+    <%= form.submit "Continuar" %>
   </div>
 <% end %>
 

@@ -12,6 +12,8 @@ class Student < ApplicationRecord
 
 	validates :identifier, length: { maximum: 25 }
 
+	validates :gender, presence: true, length: { maximum: 25 }
+
 	validates :birth_date, presence: true
 
 	validates :career, length: { maximum: 50 }

@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   post 'index/start'
   get 'index/result'
   post 'index/result'
+  get 'index/finish'
 
   root 'index#home'
 

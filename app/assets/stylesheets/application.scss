@@ -461,6 +461,30 @@ h2{
     }
 }
 
+
+.finishWrapper{
+	font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+	text-align: center;
+
+	h5{
+		text-transform: uppercase;
+	    background-color: #337ab7;
+	    color: #fff;
+	    padding-bottom: 30px;
+	    padding-top: 30px;
+	    font-size: 60px;
+	    font-style: italic;
+	    margin-top: 130px;
+	    letter-spacing: 3px;
+	    margin-bottom: 60px;
+	}
+
+	p{
+		font-size: 25px;
+		margin-bottom: 40px;
+	}
+}
+
 @font-face {
   font-family: 'RobotoDraft';
   font-style: normal;

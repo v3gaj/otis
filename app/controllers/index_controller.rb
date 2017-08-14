@@ -49,13 +49,29 @@ class IndexController < ApplicationController
     end
   end
 
+  def finish
+  end
+
   def submit
-  	@student = Student.new(student_params)
-  	session[:student] = @student
-    if session[:student] === nil
-      redirect_to 'start'      
+    if params[:student].present?
+      @student = Student.new(student_params)
+      session[:student] = @student
+      if session[:student] === nil
+        redirect_to 'start'      
+      end
+      respond_to do |format|
+        if @student.valid?
+          format.html { redirect_to action: 'type', notice: 'Pregunta creada exitosamente.' }
+          format.json { render :show, status: :created, location: @question }
+        else
+          format.html { render :info }
+          format.json { render json: @question.errors, status: :unprocessable_entity }
+        end
+      end
+    else
+      redirect_to action: 'info'
     end
-  	redirect_to action: 'type'
+  	
   end
 
   def start
@@ -135,10 +151,10 @@ class IndexController < ApplicationController
 
     respond_to do |format|
       if @student.save
-        format.html { redirect_to action: 'home', notice: 'Test Finalizado.' }
+        format.html { redirect_to action: 'finish', notice: 'Test Finalizado.' }
         format.json { render :show, status: :created, location: @student }
       else
-        format.html { render :new }
+        format.html { render :home }
         format.json { render json: @student.errors, status: :unprocessable_entity }
       end
     end
