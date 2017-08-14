@@ -35,7 +35,7 @@ function startTimer(duration, display) {
             display.textContent = "Tiempo terminado"
             $('#testForm').submit();
         }else{
-        	display.textContent = "La prueba finaliza en " + hours + " horas y " + minutes + " minutos " + seconds;
+        	display.textContent =  hours + ":" + minutes + ":" + seconds;
         }
     }, 1000);
 }

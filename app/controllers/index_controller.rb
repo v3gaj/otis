@@ -46,6 +46,7 @@ class IndexController < ApplicationController
         format.json { render :json => @test }
       end
       @questions = Question.where('id IN (?)', Relation.where("test_id = ?", id).select("question_id")).order("RAND()")
+      @total = Question.where('id IN (?)', Relation.where("test_id = ?", id).select("question_id")).order("RAND()").count
     end
   end
 

@@ -1,4 +1,5 @@
 <div class="test">
+	<div id="time">Iniciando...</div>
 	<div class="scroller_container">
 		<%= form_for(:data, :url => {:action=>"result"}, html: {id: :testForm}) do |form| %>
 			<div class="scroller">
@@ -6,7 +7,7 @@
 				<% @questions.each do |question| %>
 					<% numbering = numbering + 1 %>
 					<div>
-					    <p>Pregunta # <%= numbering %></p>
+					    <span><%= numbering %> / <%= @total %></span>
 					    <p><%= question.description %></p>
 					    <br>
 					    <% question.answers.each do |answer| %>
@@ -26,5 +27,4 @@
 			<%= form.submit %>
 		<% end %>
 	</div>
-	<div><span id="time">Iniciando la prueba</span></div>
 </div>
