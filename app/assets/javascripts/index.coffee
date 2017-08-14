@@ -7,4 +7,16 @@ jQuery(document).on 'turbolinks:load', ->
   	dots: true, pauseOnHover: false, pauseOnFocus: false
   })
 
+jQuery(document).on 'turbolinks:load', ->
+  $('.fade').slick({
+	  infinite: true,
+	  autoplay: true,
+	  arrows: false,
+	  speed: 500,
+	  fade: true,
+	  dots: true,
+	  cssEase: 'linear'
+	});
+
+
 

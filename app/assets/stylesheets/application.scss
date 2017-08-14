@@ -75,6 +75,19 @@ header{
 
 }
 
+
+.fade{
+
+	.slick-list{
+		margin: 0;
+	} 
+
+
+	img{
+		width: 100%;
+	}
+}
+
 #notice{
 	font-family: 'Source Sans Pro', sans-serif;
 }
@@ -92,18 +105,19 @@ h6{
 
 .boton{
 	display: inline-block;
-	padding: 50px 200px 50px 200px;
-	font-size: 30px;
-	background-color: #0063a8;
+	padding: 25px 0 25px 0;
+	font-size: 35px;
+	background-color: #337ab7;
 	color: #fff !important;
 	text-decoration: none;
-	border-radius: 30px;
 	font-weight: 600;	
 	font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
 	letter-spacing: 1px;
+	width: 100%;
+	text-transform: uppercase;
 
 	&:hover{
-		background-color: #888;
+		background-color: #078944;
 	}
 }
 
@@ -240,9 +254,6 @@ header{
 	border-bottom: 1px solid #e2e9e6;
 }
 
-.mainWrapper{
-	margin: 0 30px;
-}
 
 h1{
 	margin: 0;
