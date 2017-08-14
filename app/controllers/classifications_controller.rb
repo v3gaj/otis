@@ -1,4 +1,5 @@
 class ClassificationsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_classification, only: [:show, :edit, :update, :destroy]
 
   # GET /classifications
@@ -28,7 +29,7 @@ class ClassificationsController < ApplicationController
 
     respond_to do |format|
       if @classification.save
-        format.html { redirect_to @classification, notice: 'Classification was successfully created.' }
+        format.html { redirect_to @classification, notice: 'Clasificación creada exitosamente.' }
         format.json { render :show, status: :created, location: @classification }
       else
         format.html { render :new }
@@ -42,7 +43,7 @@ class ClassificationsController < ApplicationController
   def update
     respond_to do |format|
       if @classification.update(classification_params)
-        format.html { redirect_to @classification, notice: 'Classification was successfully updated.' }
+        format.html { redirect_to @classification, notice: 'Clasificación actualizada exitosamente.' }
         format.json { render :show, status: :ok, location: @classification }
       else
         format.html { render :edit }
@@ -56,7 +57,7 @@ class ClassificationsController < ApplicationController
   def destroy
     @classification.destroy
     respond_to do |format|
-      format.html { redirect_to classifications_url, notice: 'Classification was successfully destroyed.' }
+      format.html { redirect_to classifications_url, notice: 'Clasificación eliminada exitosamente.' }
       format.json { head :no_content }
     end
   end

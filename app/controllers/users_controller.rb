@@ -7,11 +7,11 @@ class UsersController < ApplicationController
 	  @user = User.new(user_params)
 
 	  if @user.save
-	    flash[:notice] = "Successfully created User." 
+	    flash[:notice] = "Usuario creado exitosamente." 
 	    redirect_to action: 'new'
 	  else
 	    render :action => 'new'
-	    flash[:notice] = "Error." 
+	    flash[:notice] = "Error al crear usuario, contacte al administrador." 
 	  end
 	end
 

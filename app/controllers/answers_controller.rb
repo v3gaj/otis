@@ -1,4 +1,5 @@
 class AnswersController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_answer, only: [:show, :edit, :update, :destroy]
   before_action :set_question
   # GET /answers
@@ -34,7 +35,7 @@ class AnswersController < ApplicationController
     @answer.question = @question
     respond_to do |format|
       if @answer.save
-        format.html { redirect_to @answer.question, notice: 'Answer was successfully created.' }
+        format.html { redirect_to @answer.question, notice: 'Respuesta creada exitosamente.' }
         format.json { render :show, status: :created, location: @answer }
         format.js   { render :layout => false }
       else
@@ -50,7 +51,7 @@ class AnswersController < ApplicationController
   def update
     respond_to do |format|
       if @answer.update(answer_params)
-        format.html { redirect_to @answer.question, notice: 'Answer was successfully updated.' }
+        format.html { redirect_to @answer.question, notice: 'Respuesta actualizada exitosamente.' }
         format.json { render :show, status: :ok, location: @answer }
       else
         format.html { render :edit }
@@ -64,7 +65,7 @@ class AnswersController < ApplicationController
   def destroy
     @answer.destroy
     respond_to do |format|
-      format.html { redirect_to question_path(@question), notice: 'Answer was successfully destroyed.' }
+      format.html { redirect_to question_path(@question), notice: 'Respuesta eliminada exitosamente.' }
       format.json { head :no_content }
     end
   end

@@ -1,4 +1,5 @@
 class TestsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_test, only: [:show, :edit, :update, :destroy]
 
   # GET /tests
@@ -67,7 +68,7 @@ class TestsController < ApplicationController
 
     respond_to do |format|
       if @test.save
-        format.html { redirect_to @test, notice: 'Test was successfully created.' }
+        format.html { redirect_to @test, notice: 'Prueba creada exitosamente.' }
         format.json { render :show, status: :created, location: @test }
       else
         format.html { render :new }
@@ -81,7 +82,7 @@ class TestsController < ApplicationController
   def update
     respond_to do |format|
       if @test.update(test_params)
-        format.html { redirect_to @test, notice: 'Test was successfully updated.' }
+        format.html { redirect_to @test, notice: 'Prueba actualizada exitosamente.' }
         format.json { render :show, status: :ok, location: @test }
       else
         format.html { render :edit }
@@ -95,7 +96,7 @@ class TestsController < ApplicationController
   def destroy
     @test.destroy
     respond_to do |format|
-      format.html { redirect_to tests_url, notice: 'Test was successfully destroyed.' }
+      format.html { redirect_to tests_url, notice: 'Prueba eliminada exitosamente.' }
       format.json { head :no_content }
     end
   end

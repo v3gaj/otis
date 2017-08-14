@@ -1,4 +1,5 @@
 class RelationsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_relation, only: [:show, :edit, :update, :destroy]
   before_action :set_test
 
@@ -30,7 +31,7 @@ class RelationsController < ApplicationController
     @relation.test = @test
     respond_to do |format|
       if @relation.save
-        format.html { redirect_to @relation.test, notice: 'Relation was successfully created.' }
+        format.html { redirect_to @relation.test, notice: 'Relación creada exitosamente.' }
         format.json { render :show, status: :created, location: @relation }
       else
         format.html { render :new }
@@ -44,7 +45,7 @@ class RelationsController < ApplicationController
     params[:question_ids].each do|question_id|
       Relation.create(:test_id => params[:test_id], :question_id => question_id)
     end 
-    redirect_to @test, notice: 'Many relations were successfully created.'
+    redirect_to @test, notice: 'Relaciones creadas exitosamente.'
   end
 
   # PATCH/PUT /relations/1
@@ -52,7 +53,7 @@ class RelationsController < ApplicationController
   def update
     respond_to do |format|
       if @relation.update(relation_params)
-        format.html { redirect_to @relation.test, notice: 'Relation was successfully updated.' }
+        format.html { redirect_to @relation.test, notice: 'Relación actualizada exitosamente.' }
         format.json { render :show, status: :ok, location: @relation }
       else
         format.html { render :edit }
@@ -66,7 +67,7 @@ class RelationsController < ApplicationController
   def destroy
     @relation.destroy
     respond_to do |format|
-      format.html { redirect_to test_path(@test), notice: 'Relation was successfully destroyed.' }
+      format.html { redirect_to test_path(@test), notice: 'Relación eliminada exitosamente.' }
       format.json { head :no_content }
     end
   end

@@ -1,4 +1,5 @@
 class CareersController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_career, only: [:show, :edit, :update, :destroy]
 
   # GET /careers
@@ -28,7 +29,7 @@ class CareersController < ApplicationController
 
     respond_to do |format|
       if @career.save
-        format.html { redirect_to @career, notice: 'Career was successfully created.' }
+        format.html { redirect_to @career, notice: 'Carrera creada exitosamente.' }
         format.json { render :show, status: :created, location: @career }
       else
         format.html { render :new }
@@ -42,7 +43,7 @@ class CareersController < ApplicationController
   def update
     respond_to do |format|
       if @career.update(career_params)
-        format.html { redirect_to @career, notice: 'Career was successfully updated.' }
+        format.html { redirect_to @career, notice: 'Carrera actualizada exitosamente.' }
         format.json { render :show, status: :ok, location: @career }
       else
         format.html { render :edit }
@@ -56,7 +57,7 @@ class CareersController < ApplicationController
   def destroy
     @career.destroy
     respond_to do |format|
-      format.html { redirect_to careers_url, notice: 'Career was successfully destroyed.' }
+      format.html { redirect_to careers_url, notice: 'Carrera eliminada exitosamente.' }
       format.json { head :no_content }
     end
   end
