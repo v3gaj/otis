@@ -5,5 +5,11 @@ class Answer < ApplicationRecord
 
  	belongs_to :question
 
- 	 validates :value, uniqueness: { scope: :question_id, conditions: -> { where(value: true) } } 
+ 	validates :value, uniqueness: { scope: :question_id, conditions: -> { where(value: true) } }
+
+
+ 	validates :description, presence: true
+
+ 	validates :content, presence: true
+
 end
