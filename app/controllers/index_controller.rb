@@ -1,5 +1,5 @@
 class IndexController < ApplicationController
-
+  protect_from_forgery
 
   def home
     session[:test] = nil
