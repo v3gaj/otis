@@ -9,7 +9,7 @@
 					<div>
 					    <span><%= numbering %> / <%= @total %></span>
 					    <p><%= question.description %></p>
-					    <%= image_tag question.image %>
+					    <% if question.image.present? %><%= image_tag question.image %><% end %>
 					    <br>
 					    <% question.answers.each do |answer| %>
 					      <% if question.question_type ==="Cerrada" %>
