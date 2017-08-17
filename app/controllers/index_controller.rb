@@ -11,10 +11,13 @@ class IndexController < ApplicationController
   	@student = Student.new
   end
 
+
+
   def type
 
     session[:test] = nil
   	@test = Test.new
+    @student = session[:student]
   	student = session[:student]
   	if student === nil || student['name'] === nil
   	  session[:student] = nil
@@ -26,13 +29,30 @@ class IndexController < ApplicationController
   	  else
   	  	@tests = Test.where('tests.indentifier IN (?)',['General'])
   	  end
+      
   	end
+    session[:stud] = @student
   end
+
+  def start
+
+    if session[:stud] === nil
+      redirect_to action: 'info'
+    else
+      session[:test] = params[:id]
+      test = Test.find(params[:id])
+      student = session[:stud]
+      student['test'] = test['indentifier']
+      session[:student] = student
+      redirect_to action: 'test'
+    end
+  end
+
+
 
   def test
     id = session[:test]
     student = session[:student]
-    sleep 2.5
     if student === nil || id === nil
       session[:test] = nil
       session[:student] = nil
@@ -56,8 +76,8 @@ class IndexController < ApplicationController
     if params[:student].present?
       @student = Student.new(student_params)
       session[:student] = @student
-      if session[:student] === nil
-        redirect_to 'start'      
+      if session[:stud] === nil
+        redirect_to 'info'      
       end
       respond_to do |format|
         if @student.valid?
@@ -74,18 +94,7 @@ class IndexController < ApplicationController
   	
   end
 
-  def start
-  	session[:test] = params[:id]
-    test = Test.find(params[:id])
-    if session[:student] === nil
-      redirect_to action: 'start'
-    else
-      student = session[:student]
-      student['test'] = test['indentifier']
-      session[:student] = student
-      redirect_to action: 'test'
-    end
-  end
+  
 
   def result
     id = session[:test]
