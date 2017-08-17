@@ -34,10 +34,13 @@
         </ul>
       </nav>
     </header>
+    <p class="notice"><%= notice %></p>
     <div class="mainWrapper">
       <%= yield %>
     </div>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <div class="noticeWrapper">
+      
+      <p class="alert"><%= alert %></p>
+    </div>
   </body>
 </html>

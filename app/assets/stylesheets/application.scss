@@ -92,6 +92,17 @@ header{
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+.notice{
+	display: block;
+	text-align: center;
+	font-family: 'Noticia Text';
+	font-size: 18px;
+	background-color: #da0014;
+	color: #fff;
+	margin: 0;
+
+}
+
 .index{
 	text-align: center;
 }
@@ -763,7 +774,7 @@ h2{
 .button{
 	background-color: #42a5f5;
 	color: #ffffff;
-    border-color: #0d89ed;
+    border: none;
     text-transform: uppercase;
     padding: 8px 12px;
     font-size: 14px;
