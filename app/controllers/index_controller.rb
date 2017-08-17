@@ -11,7 +11,26 @@ class IndexController < ApplicationController
   	@student = Student.new
   end
 
-
+  def submit
+    if params[:student].present?
+      @student = Student.new(student_params)
+      session[:student] = @student
+      if session[:student] === nil
+        redirect_to 'info'      
+      end
+      respond_to do |format|
+        if @student.valid?
+          format.html { redirect_to action: 'type', notice: 'Pregunta creada exitosamente.' }
+          format.json { render :show, status: :created, location: @question }
+        else
+          format.html { render :info }
+          format.json { render json: @question.errors, status: :unprocessable_entity }
+        end
+      end
+    else
+      redirect_to action: 'info'
+    end
+  end
 
   def type
 
@@ -72,27 +91,7 @@ class IndexController < ApplicationController
   def finish
   end
 
-  def submit
-    if params[:student].present?
-      @student = Student.new(student_params)
-      session[:student] = @student
-      if session[:stud] === nil
-        redirect_to 'info'      
-      end
-      respond_to do |format|
-        if @student.valid?
-          format.html { redirect_to action: 'type', notice: 'Pregunta creada exitosamente.' }
-          format.json { render :show, status: :created, location: @question }
-        else
-          format.html { render :info }
-          format.json { render json: @question.errors, status: :unprocessable_entity }
-        end
-      end
-    else
-      redirect_to action: 'info'
-    end
-  	
-  end
+  
 
   
 
