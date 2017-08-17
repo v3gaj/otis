@@ -12,21 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :indentifier %>
+    <%= form.label :indentifier %><br>
     <%= form.text_field :indentifier, id: :test_indentifier %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description, id: :test_description %>
+    <%= form.label :description %><br>
+    <%= form.text_area :description, id: :test_description %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :time %>
+    <%= form.label :time %><br>
     <%= form.time_select :time, {:include_blank => true, :default => nil} , id: :test_time %>
   </div>
-
+  <br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Agregar", class: "button" %>
   </div>
 <% end %>

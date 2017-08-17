@@ -1,27 +1,25 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Classifications</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @classifications.each do |classification| %>
-      <tr>
-        <td><%= classification.description %></td>
-        <td><%= link_to 'Show', classification %></td>
-        <td><%= link_to 'Edit', edit_classification_path(classification) %></td>
-        <td><%= link_to 'Destroy', classification, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<h1>Clasificaciones</h1>
+<%= link_to 'Nueva Clasificación', new_classification_path, class: "button buttonPadding" %>
 <br>
+<br>
+<br>
+<div class="classificationWrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>Descripción</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
 
-<%= link_to 'New Classification', new_classification_path %>
+    <tbody>
+      <% @classifications.each do |classification| %>
+        <tr>
+          <td><p><%= classification.description %></p></td>
+          <td><%= link_to 'Editar', edit_classification_path(classification), class: "button" %> <%= link_to 'Eliminar', classification, method: :delete, data: { confirm: 'Are you sure?' }, class: "button" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>  
+

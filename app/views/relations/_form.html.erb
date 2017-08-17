@@ -12,25 +12,24 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :question_id %>
-    <%= form.select :question_id, options_for_select(Question.all.map{|p|[p.identifier, p.id]}, :selected => form.object.question_id), prompt: "Select", id: :relation_question_id %>
+    <%= form.label "Pregunta" %><br>
+    <%= form.select :question_id, options_for_select(Question.all.map{|p|[p.identifier, p.id]}, :selected => form.object.question_id), prompt: "Seleccionar", id: :relation_question_id %>
   </div>
-
+  <br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Agregar Pregunta", class: "button" %>
   </div>
 <% end %>
-
+<br>
+<br>
 <%= form_for([@test, @relation], :url => {:action=>"create_multiple"}) do |form| %>
-  <h1>Questions</h1>
 
   <table>
     <thead>
       <tr>
-        <th>Identifier</th>
-        <th>Description</th>
-        <th>Image</th>
-        <th colspan="3"></th>
+        <th>Selector</th>
+        <th>Identicador</th>
+        <th>Descripción</th>
       </tr>
     </thead>
 
@@ -40,13 +39,14 @@
           <tr>
             <td><%= check_box_tag "question_ids[]", question.id %></td>
             <td><%= question.identifier %></td>
-            <td><%= question.description %></td>
+            <td><p><%= question.description %></p></td>
           </tr>
         <% end %>
        <% end %> 
     </tbody>
   </table>
+  <br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Agregar Pregunta", class: "button" %>
   </div>
 <% end %>

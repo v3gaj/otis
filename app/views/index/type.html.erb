@@ -1,9 +1,18 @@
-<h1>Tests Available</h1>
-<% for test in @tests %>
-	<%= form_for(@test, :url => {:action=>"start"}) do |form| %> 	
-	    <tr>
-	        <td><%= form.hidden_field test.id, name: "id", value: test.id %></td>
-	        <td><%= form.submit test.indentifier %></td>
-	    </tr>
+<h1>Pruebas Disponibles</h1>
+<div class="typeWrapper">
+	<p>Seleccione una de las siguientes pruebas, si existe una prueba relacionada a su carrera se recomienda aplicarla:</p>
+	<p>Por favor tomar en cuenta los siguientes detalles:</p>
+	<ul>
+		<li>La prueba iniciara automaticamente despues de selecionarla</li>
+		<li>La prueba tiene un tiempo estimado para completarla, si el tiempo se cumple la misma finalizara automaticamente.</li>
+		<li>Se recomienda evitar manipular el browser, ya que si se sale de la prueba debera iniciarla nuevamente.</li>
+	</ul>
+	<% for test in @tests %>
+		<%= form_for(@test, :url => {:action=>"start"}) do |form| %> 	
+		    <tr>
+		        <td><%= form.hidden_field test.id, name: "id", value: test.id %></td>
+		        <td><%= form.submit test.indentifier, class: "typeButton" %></td>
+		    </tr>
+		<% end %>
 	<% end %>
-<% end %>
+</div>

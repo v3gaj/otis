@@ -13,47 +13,47 @@
   <% end %>
 
   <div class="field">
-    <%= form.label "Nombre" %>
+    <%= form.label "Nombre" %><br>
     <%= form.text_field :name, required: true, id: :student_name %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label "Primer Apellido" %>
+    <%= form.label "Primer Apellido" %><br>
     <%= form.text_field :lastname, required: true, id: :student_lastname %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label "Segundo Apellido" %>
+    <%= form.label "Segundo Apellido" %><br>
     <%= form.text_field :second_lastname, required: true, id: :student_second_lastname %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label "Id" %>
+    <%= form.label "Id" %><br>
     <%= form.text_field :identifier, id: :student_identifier %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label "Genero" %>
+    <%= form.label "Genero" %><br>
     <%= form.select :gender, options_for_select([ "Masculino", "Femenino"], :selected => form.object.gender),:default => nil, required: true %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label "Fecha de Nacimiento" %>
-    <%= form.date_select :birth_date, {:include_blank => true, :default => nil}, required: true, id: :student_birth_date %>
+    <%= form.label "Fecha de Nacimiento" %><br>
+    <%= form.date_select :birth_date, {:prompt => {:month => 'Mes', :day => 'Dia', :year => 'Año'}, default: nil, required: true, :start_year=>1917, :order => [:month, :day, :year]}, required: true, id: :student_birth_date %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label "Carrera" %>
+    <%= form.label "Carrera" %><br>
     <%= form.select :career, options_for_select(Career.all.map{|p|[p.career]}), prompt: "Seleccionar" %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label "Colegio" %>
+    <%= form.label "Colegio" %><br>
     <%= form.text_field :high_school, id: :student_high_school %>
   </div>
-
+  <br>
   <div class="actions">
-    <%= form.submit "Continuar" %>
+    <%= form.submit "Continuar", class: "button" %>
   </div>
 <% end %>
 

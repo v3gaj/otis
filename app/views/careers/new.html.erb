@@ -1,5 +1,6 @@
-<h1>New Career</h1>
-
-<%= render 'form', career: @career %>
-
-<%= link_to 'Back', careers_path %>
+<h1>Nueva Carrera</h1>
+<div class="newWrapper">
+	<%= render 'form', career: @career %>
+</div>
+<br>
+<%= link_to 'Atras', careers_path, class: "button buttonPadding" %>

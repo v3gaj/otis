@@ -1,34 +1,32 @@
-<p id="notice"><%= notice %></p>
+<h1><%= @question.identifier %></h1>
+<div class="showWrapper">
+  <p>
+    <strong>Tipo:</strong>
+    <%= @question.question_type %>
+  </p>
 
-<p>
-  <strong>Identifier:</strong>
-  <%= @question.identifier %>
-</p>
+  <p>
+    <strong>Clasificación:</strong>
+    <%= @question.classification.description %>
+  </p>
 
-<p>
-  <strong>Type:</strong>
-  <%= @question.question_type %>
-</p>
+  <p>
+    <strong>Descripción:</strong>
+    <%= @question.description %>
+  </p>
+  <% if @question.image.present? %>
+    <p>
+      <strong>Imagen:</strong>
+      <%= image_tag @question.image %>
+    </p>
+  <% end %>
+</div>
+<h1>Respuestas</h1>
+<div class="answerWrapper">
+  <div class="answer_table"><%= render "answers/table" %></div>
 
-<p>
-  <strong>Classification:</strong>
-  <%= @question.classification.description %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @question.description %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @question.image %>
-</p>
-
-<%= link_to 'Edit', edit_question_path(@question) %> |
-<%= link_to 'Back', questions_path %>
-
-<div class="answer_table"><%= render "answers/table" %></div>
-
-<div class="answer_form"></div>
-
+  <div class="answer_form"></div>
+</div>
+<br>
+<br>
+<%= link_to 'Atras', questions_path, class: "button buttonPadding" %>

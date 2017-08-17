@@ -12,11 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description, id: :classification_description %>
+    <%= form.label "Descripción" %><br>
+    <%= form.text_field :description, id: :classification_description, required: true %>
   </div>
-
+  <br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Agregar Clasificación", class: "button" %>
   </div>
 <% end %>

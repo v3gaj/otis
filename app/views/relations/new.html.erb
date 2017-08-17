@@ -1,6 +1,8 @@
-<h1>New Relation</h1>
-
-<%= render 'form', relation: @relation %>
-
-<%= link_to 'Back', test_path(@test) %>
+<h1>Agregar Pregunta</h1>
+<div class="relationNewWrapper">
+	<%= render 'form', relation: @relation %>
+</div>
+<br>
+<br>
+<%= link_to 'Atras', test_path(@test), class: "button buttonPadding" %>
 

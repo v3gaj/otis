@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :career %>
-    <%= form.text_field :career, id: :career_career %>
+    <%= form.label "Carrera" %><br>
+    <%= form.text_field :career, id: :career_career, required: true %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :test_id %>
-    <%= form.select :test_id, options_for_select(Test.all.map{|p|[p.indentifier, p.id]}, :selected => form.object.test_id), prompt: "Select", id: :test_id %>
+    <%= form.label "Prueba" %><br>
+    <%= form.select :test_id, options_for_select(Test.all.map{|p|[p.indentifier, p.id]}, :selected => form.object.test_id), prompt: "Seleccionar", id: :test_id, required: true %>
   </div>
-
+  <br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Agregar Carrera", class: "button" %>
   </div>
 <% end %>

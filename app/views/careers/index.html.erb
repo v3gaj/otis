@@ -1,28 +1,28 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Careers</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Career</th>
-      <th>Test</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @careers.each do |career| %>
-      <tr>
-        <td><%= career.career %></td>
-        <td><%= career.indentifier %></td>
-        <td><%= link_to 'Edit', edit_career_path(career) %></td>
-        <td><%= link_to 'Destroy', career, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<h1>Carreras</h1>
+<%= link_to 'Nueva Carrera', new_career_path, class: "button buttonPadding" %>
 <br>
+<br>
+<br>
+<div class="careerWrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>Carrera</th>
+        <th>Prueba</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
 
-<%= link_to 'New Career', new_career_path %>
+    <tbody>
+      <% @careers.each do |career| %>
+        <tr>
+          <td><p><%= career.career %></p></td>
+          <td><%= career.indentifier %></td>
+          <td><%= link_to 'Editar', edit_career_path(career), class: "button" %> <%= link_to 'Eliminar', career, method: :delete, data: { confirm: 'Are you sure?' }, class: "button" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+

@@ -12,31 +12,31 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :classification_id %>
-    <%= form.select :classification_id, options_for_select(Classification.all.map{|p|[p.description, p.id]}, :selected => form.object.classification_id), prompt: "Select" %>
+    <%= form.label "Clasificación" %><br>
+    <%= form.select :classification_id, options_for_select(Classification.all.map{|p|[p.description, p.id]}, :selected => form.object.classification_id), prompt: "Seleccionar" %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :question_type %>
-    <%= form.select :question_type, options_for_select([ "Abierta", "Cerrada"], :selected => form.object.question_type), prompt: "Select" , class: "content_clear"%>
+    <%= form.label "Tipo" %><br>
+    <%= form.select :question_type, options_for_select([ "Abierta", "Cerrada"], :selected => form.object.question_type), prompt: "Seleccionar" , class: "content_clear"%>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :identifier %>
+    <%= form.label "Identificador" %><br>
     <%= form.text_field :identifier, id: :question_identifier %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description, id: :question_description %>
+    <%= form.label "Descripción" %><br>
+    <%= form.text_area :description, id: :question_description %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :image %>
+    <%= form.label "Imagen" %><br>
     <%= form.file_field :image, id: :question_image %>
   </div>
-
+  <br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Editar Pregunta", class: "button" %>
   </div>
 <% end %>

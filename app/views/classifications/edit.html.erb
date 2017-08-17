@@ -1,6 +1,6 @@
-<h1>Editing Classification</h1>
-
-<%= render 'form', classification: @classification %>
-
-<%= link_to 'Show', @classification %> |
-<%= link_to 'Back', classifications_path %>
+<h1>Editar Clasificación</h1>
+<div class="editWraper">
+	<%= render 'form', classification: @classification %>
+</div>
+<br>
+<%= link_to 'Back', classifications_path, class: "button buttonPadding" %>

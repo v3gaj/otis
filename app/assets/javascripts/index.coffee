@@ -4,7 +4,7 @@
 
 jQuery(document).on 'turbolinks:load', ->
   $('.scroller').slick({
-  	dots: true, pauseOnHover: false, pauseOnFocus: false
+  	pauseOnHover: false, pauseOnFocus: false
   })
 
 jQuery(document).on 'turbolinks:load', ->
