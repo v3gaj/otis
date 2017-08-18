@@ -29,7 +29,7 @@ class ClassificationsController < ApplicationController
 
     respond_to do |format|
       if @classification.save
-        format.html { redirect_to @classification, notice: 'Clasificación creada exitosamente.' }
+        format.html { redirect_to classifications_path, notice: 'Clasificación creada exitosamente.' }
         format.json { render :show, status: :created, location: @classification }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class ClassificationsController < ApplicationController
   def update
     respond_to do |format|
       if @classification.update(classification_params)
-        format.html { redirect_to @classification, notice: 'Clasificación actualizada exitosamente.' }
+        format.html { redirect_to classifications_path, notice: 'Clasificación actualizada exitosamente.' }
         format.json { render :show, status: :ok, location: @classification }
       else
         format.html { render :edit }

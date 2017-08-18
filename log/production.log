@@ -1,0 +1,978 @@
+I, [2017-08-17T16:41:42.007843 #7752]  INFO -- : [2eaef9d8-1192-480b-8676-c9d08f4e0fdd] Started GET "/" for 127.0.0.1 at 2017-08-17 16:41:42 -0600
+I, [2017-08-17T16:41:42.027858 #7752]  INFO -- : [2eaef9d8-1192-480b-8676-c9d08f4e0fdd] Processing by IndexController#home as HTML
+I, [2017-08-17T16:41:42.184019 #7752]  INFO -- : [2eaef9d8-1192-480b-8676-c9d08f4e0fdd]   Rendering index/home.html.erb within layouts/application
+I, [2017-08-17T16:42:29.928797 #7752]  INFO -- : [2eaef9d8-1192-480b-8676-c9d08f4e0fdd]   Rendered index/home.html.erb within layouts/application (47744.3ms)
+I, [2017-08-17T16:42:29.938804 #7752]  INFO -- : [2eaef9d8-1192-480b-8676-c9d08f4e0fdd] Completed 200 OK in 47910ms (Views: 47856.9ms)
+I, [2017-08-17T16:42:29.952317 #7752]  INFO -- : [324c3b05-a1ff-4554-9fe7-feb3bc079226] Started GET "/assets/application-a897f96043219bf07b533e6fb803ef93c12e3dcff277427c9105d6ba18d0cf99.css" for 127.0.0.1 at 2017-08-17 16:42:29 -0600
+I, [2017-08-17T16:42:29.965830 #7752]  INFO -- : [3207dac9-e361-4ba5-ad72-8825c08aa69b] Started GET "/assets/application-47057878e7a889066cb47da679130249bb875078db5471790077c11f3398d5a3.js" for 127.0.0.1 at 2017-08-17 16:42:29 -0600
+I, [2017-08-17T16:42:30.044887 #7752]  INFO -- : [562ce127-b138-4558-88f5-e5ef9690a3bd] Started GET "/assets/fontawesome-webfont.woff2?v=4.6.2" for 127.0.0.1 at 2017-08-17 16:42:30 -0600
+I, [2017-08-17T16:42:30.232029 #7752]  INFO -- : [307a1179-de32-4e5d-96d2-1f6f7d5fb85c] Started GET "/index/test.json" for 127.0.0.1 at 2017-08-17 16:42:30 -0600
+I, [2017-08-17T16:42:30.234027 #7752]  INFO -- : [307a1179-de32-4e5d-96d2-1f6f7d5fb85c] Processing by IndexController#test as JSON
+I, [2017-08-17T16:42:30.236027 #7752]  INFO -- : [307a1179-de32-4e5d-96d2-1f6f7d5fb85c] Redirected to http://localhost:3000/index/info
+I, [2017-08-17T16:42:30.237027 #7752]  INFO -- : [307a1179-de32-4e5d-96d2-1f6f7d5fb85c] Completed 302 Found in 2ms
+I, [2017-08-17T16:42:30.270056 #7752]  INFO -- : [314da348-b28d-4072-a0d4-766650c3b4fc] Started GET "/index/info" for 127.0.0.1 at 2017-08-17 16:42:30 -0600
+I, [2017-08-17T16:42:30.271056 #7752]  INFO -- : [314da348-b28d-4072-a0d4-766650c3b4fc] Processing by IndexController#info as JSON
+I, [2017-08-17T16:42:30.273056 #7752]  INFO -- : [314da348-b28d-4072-a0d4-766650c3b4fc] Completed 500 Internal Server Error in 2ms
+F, [2017-08-17T16:42:30.274057 #7752] FATAL -- : [314da348-b28d-4072-a0d4-766650c3b4fc]   
+F, [2017-08-17T16:42:30.275057 #7752] FATAL -- : [314da348-b28d-4072-a0d4-766650c3b4fc] Mysql2::Error (Unknown MySQL server host '192.241.129.84:3306' (0)):
+F, [2017-08-17T16:42:30.275057 #7752] FATAL -- : [314da348-b28d-4072-a0d4-766650c3b4fc]   
+F, [2017-08-17T16:42:30.275057 #7752] FATAL -- : [314da348-b28d-4072-a0d4-766650c3b4fc] app/controllers/index_controller.rb:11:in `info'
+I, [2017-08-17T16:42:38.806707 #7752]  INFO -- : [4df5770d-103a-45a5-91a1-d185d13e79cd] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-17 16:42:38 -0600
+I, [2017-08-17T16:42:38.809709 #7752]  INFO -- : [4df5770d-103a-45a5-91a1-d185d13e79cd] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-17T16:42:38.820834 #7752]  INFO -- : [4df5770d-103a-45a5-91a1-d185d13e79cd] Completed 500 Internal Server Error in 11ms
+F, [2017-08-17T16:42:38.823835 #7752] FATAL -- : [4df5770d-103a-45a5-91a1-d185d13e79cd]   
+F, [2017-08-17T16:42:38.824240 #7752] FATAL -- : [4df5770d-103a-45a5-91a1-d185d13e79cd] Mysql2::Error (Unknown MySQL server host '192.241.129.84:3306' (0)):
+F, [2017-08-17T16:42:38.824463 #7752] FATAL -- : [4df5770d-103a-45a5-91a1-d185d13e79cd]   
+F, [2017-08-17T16:42:38.824663 #7752] FATAL -- : [4df5770d-103a-45a5-91a1-d185d13e79cd] mysql2-0.4.7-x86 (mingw32) lib/mysql2/client.rb:89:in `connect'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] mysql2-0.4.7-x86 (mingw32) lib/mysql2/client.rb:89:in `initialize'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/connection_handling.rb:88:in `connection'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/model_schema.rb:471:in `load_schema!'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/attributes.rb:233:in `load_schema!'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/attribute_decorators.rb:50:in `load_schema!'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/model_schema.rb:464:in `block in load_schema'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] C:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/model_schema.rb:461:in `load_schema'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/model_schema.rb:353:in `attribute_types'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/attribute_methods.rb:179:in `has_attribute?'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/inheritance.rb:55:in `new'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] devise (4.3.0) app/controllers/devise/sessions_controller.rb:9:in `new'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/abstract_controller/base.rb:186:in `process_action'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activesupport (5.1.2) lib/active_support/callbacks.rb:131:in `run_callbacks'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] warden (1.2.7) lib/warden/manager.rb:35:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] rack (2.0.3) lib/rack/etag.rb:25:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] rack (2.0.3) lib/rack/head.rb:12:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[4df5770d-103a-45a5-91a1-d185d13e79cd] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-17T16:42:53.783707 #7752]  INFO -- : [6226c76a-32bd-42e1-840f-09e479663379] Started GET "/" for 127.0.0.1 at 2017-08-17 16:42:53 -0600
+I, [2017-08-17T16:42:53.784705 #7752]  INFO -- : [6226c76a-32bd-42e1-840f-09e479663379] Processing by IndexController#home as HTML
+I, [2017-08-17T16:42:53.786207 #7752]  INFO -- : [6226c76a-32bd-42e1-840f-09e479663379]   Rendering index/home.html.erb within layouts/application
+I, [2017-08-17T16:42:53.787709 #7752]  INFO -- : [6226c76a-32bd-42e1-840f-09e479663379]   Rendered index/home.html.erb within layouts/application (1.5ms)
+I, [2017-08-17T16:42:53.789711 #7752]  INFO -- : [6226c76a-32bd-42e1-840f-09e479663379] Completed 200 OK in 5ms (Views: 4.2ms)
+I, [2017-08-17T16:42:53.868065 #7752]  INFO -- : [2c85708b-6c48-4c7a-b302-40a746b1a3c3] Started GET "/assets/fontawesome-webfont.woff2?v=4.6.2" for 127.0.0.1 at 2017-08-17 16:42:53 -0600
+I, [2017-08-17T16:42:53.934843 #7752]  INFO -- : [70673b05-ae35-4e10-9f58-b862e49e3a55] Started GET "/index/test.json" for 127.0.0.1 at 2017-08-17 16:42:53 -0600
+I, [2017-08-17T16:42:53.935844 #7752]  INFO -- : [70673b05-ae35-4e10-9f58-b862e49e3a55] Processing by IndexController#test as JSON
+I, [2017-08-17T16:42:53.936846 #7752]  INFO -- : [70673b05-ae35-4e10-9f58-b862e49e3a55] Redirected to http://localhost:3000/index/info
+I, [2017-08-17T16:42:53.936846 #7752]  INFO -- : [70673b05-ae35-4e10-9f58-b862e49e3a55] Completed 302 Found in 1ms
+I, [2017-08-17T16:42:53.959862 #7752]  INFO -- : [a1d57514-36d6-4413-8f14-4cde250d915d] Started GET "/index/info" for 127.0.0.1 at 2017-08-17 16:42:53 -0600
+I, [2017-08-17T16:42:53.961863 #7752]  INFO -- : [a1d57514-36d6-4413-8f14-4cde250d915d] Processing by IndexController#info as JSON
+I, [2017-08-17T16:42:53.963864 #7752]  INFO -- : [a1d57514-36d6-4413-8f14-4cde250d915d] Completed 500 Internal Server Error in 2ms
+F, [2017-08-17T16:42:53.964865 #7752] FATAL -- : [a1d57514-36d6-4413-8f14-4cde250d915d]   
+F, [2017-08-17T16:42:53.964865 #7752] FATAL -- : [a1d57514-36d6-4413-8f14-4cde250d915d] Mysql2::Error (Unknown MySQL server host '192.241.129.84:3306' (0)):
+F, [2017-08-17T16:42:53.965865 #7752] FATAL -- : [a1d57514-36d6-4413-8f14-4cde250d915d]   
+F, [2017-08-17T16:42:53.965865 #7752] FATAL -- : [a1d57514-36d6-4413-8f14-4cde250d915d] app/controllers/index_controller.rb:11:in `info'
+I, [2017-08-17T16:42:55.380636 #7752]  INFO -- : [ab1d41ab-662a-4e6f-9436-d40d679b9b7c] Started GET "/index/info" for 127.0.0.1 at 2017-08-17 16:42:55 -0600
+I, [2017-08-17T16:42:55.382140 #7752]  INFO -- : [ab1d41ab-662a-4e6f-9436-d40d679b9b7c] Processing by IndexController#info as HTML
+I, [2017-08-17T16:42:55.384140 #7752]  INFO -- : [ab1d41ab-662a-4e6f-9436-d40d679b9b7c] Completed 500 Internal Server Error in 2ms
+F, [2017-08-17T16:42:55.385641 #7752] FATAL -- : [ab1d41ab-662a-4e6f-9436-d40d679b9b7c]   
+F, [2017-08-17T16:42:55.385641 #7752] FATAL -- : [ab1d41ab-662a-4e6f-9436-d40d679b9b7c] Mysql2::Error (Unknown MySQL server host '192.241.129.84:3306' (0)):
+F, [2017-08-17T16:42:55.386142 #7752] FATAL -- : [ab1d41ab-662a-4e6f-9436-d40d679b9b7c]   
+F, [2017-08-17T16:42:55.386142 #7752] FATAL -- : [ab1d41ab-662a-4e6f-9436-d40d679b9b7c] app/controllers/index_controller.rb:11:in `info'
+I, [2017-08-17T16:43:13.777034 #7752]  INFO -- : [1d6d8da6-0d50-4f72-99a2-3c6435a9e064] Started GET "/" for 127.0.0.1 at 2017-08-17 16:43:13 -0600
+I, [2017-08-17T16:43:13.778034 #7752]  INFO -- : [1d6d8da6-0d50-4f72-99a2-3c6435a9e064] Processing by IndexController#home as HTML
+I, [2017-08-17T16:43:13.780037 #7752]  INFO -- : [1d6d8da6-0d50-4f72-99a2-3c6435a9e064]   Rendering index/home.html.erb within layouts/application
+I, [2017-08-17T16:43:13.782038 #7752]  INFO -- : [1d6d8da6-0d50-4f72-99a2-3c6435a9e064]   Rendered index/home.html.erb within layouts/application (2.0ms)
+I, [2017-08-17T16:43:13.785039 #7752]  INFO -- : [1d6d8da6-0d50-4f72-99a2-3c6435a9e064] Completed 200 OK in 6ms (Views: 5.0ms)
+I, [2017-08-17T16:43:13.884615 #7752]  INFO -- : [0d30a0af-f06e-4204-a43e-b118dc52bd1b] Started GET "/assets/fontawesome-webfont.woff2?v=4.6.2" for 127.0.0.1 at 2017-08-17 16:43:13 -0600
+I, [2017-08-17T16:43:13.983690 #7752]  INFO -- : [3f7aac0c-0c53-42cc-92d8-6766dfab09c0] Started GET "/index/test.json" for 127.0.0.1 at 2017-08-17 16:43:13 -0600
+I, [2017-08-17T16:43:13.984691 #7752]  INFO -- : [3f7aac0c-0c53-42cc-92d8-6766dfab09c0] Processing by IndexController#test as JSON
+I, [2017-08-17T16:43:13.985692 #7752]  INFO -- : [3f7aac0c-0c53-42cc-92d8-6766dfab09c0] Redirected to http://localhost:3000/index/info
+I, [2017-08-17T16:43:13.985692 #7752]  INFO -- : [3f7aac0c-0c53-42cc-92d8-6766dfab09c0] Completed 302 Found in 1ms
+I, [2017-08-17T16:43:14.008706 #7752]  INFO -- : [1e05a1e4-8b5d-406b-a5e2-ce4810e99a0f] Started GET "/index/info" for 127.0.0.1 at 2017-08-17 16:43:14 -0600
+I, [2017-08-17T16:43:14.009712 #7752]  INFO -- : [1e05a1e4-8b5d-406b-a5e2-ce4810e99a0f] Processing by IndexController#info as JSON
+I, [2017-08-17T16:43:14.011217 #7752]  INFO -- : [1e05a1e4-8b5d-406b-a5e2-ce4810e99a0f] Completed 500 Internal Server Error in 2ms
+F, [2017-08-17T16:43:14.013214 #7752] FATAL -- : [1e05a1e4-8b5d-406b-a5e2-ce4810e99a0f]   
+F, [2017-08-17T16:43:14.013714 #7752] FATAL -- : [1e05a1e4-8b5d-406b-a5e2-ce4810e99a0f] Mysql2::Error (Unknown MySQL server host '192.241.129.84:3306' (0)):
+F, [2017-08-17T16:43:14.013714 #7752] FATAL -- : [1e05a1e4-8b5d-406b-a5e2-ce4810e99a0f]   
+F, [2017-08-17T16:43:14.013714 #7752] FATAL -- : [1e05a1e4-8b5d-406b-a5e2-ce4810e99a0f] app/controllers/index_controller.rb:11:in `info'
+I, [2017-08-17T16:43:22.295507 #7752]  INFO -- : [743897cf-233f-4ddb-b3b2-4814e061337b] Started GET "/" for 127.0.0.1 at 2017-08-17 16:43:22 -0600
+I, [2017-08-17T16:43:22.297509 #7752]  INFO -- : [743897cf-233f-4ddb-b3b2-4814e061337b] Processing by IndexController#home as HTML
+I, [2017-08-17T16:43:22.298509 #7752]  INFO -- : [743897cf-233f-4ddb-b3b2-4814e061337b]   Rendering index/home.html.erb within layouts/application
+I, [2017-08-17T16:43:22.301514 #7752]  INFO -- : [743897cf-233f-4ddb-b3b2-4814e061337b]   Rendered index/home.html.erb within layouts/application (2.0ms)
+I, [2017-08-17T16:43:22.304515 #7752]  INFO -- : [743897cf-233f-4ddb-b3b2-4814e061337b] Completed 200 OK in 7ms (Views: 5.8ms)
+I, [2017-08-17T16:43:23.928566 #7752]  INFO -- : [eb1b7b04-f30a-46c1-99b9-71e80e784495] Started GET "/" for 127.0.0.1 at 2017-08-17 16:43:23 -0600
+I, [2017-08-17T16:43:23.931068 #7752]  INFO -- : [eb1b7b04-f30a-46c1-99b9-71e80e784495] Processing by IndexController#home as HTML
+I, [2017-08-17T16:43:23.934071 #7752]  INFO -- : [eb1b7b04-f30a-46c1-99b9-71e80e784495]   Rendering index/home.html.erb within layouts/application
+I, [2017-08-17T16:43:23.936574 #7752]  INFO -- : [eb1b7b04-f30a-46c1-99b9-71e80e784495]   Rendered index/home.html.erb within layouts/application (1.5ms)
+I, [2017-08-17T16:43:23.939574 #7752]  INFO -- : [eb1b7b04-f30a-46c1-99b9-71e80e784495] Completed 200 OK in 9ms (Views: 6.0ms)
+I, [2017-08-17T16:43:24.567072 #7752]  INFO -- : [1bd608bf-fcd1-4d3f-848a-63b308a87d10] Started GET "/" for 127.0.0.1 at 2017-08-17 16:43:24 -0600
+I, [2017-08-17T16:43:24.569073 #7752]  INFO -- : [1bd608bf-fcd1-4d3f-848a-63b308a87d10] Processing by IndexController#home as HTML
+I, [2017-08-17T16:43:24.571075 #7752]  INFO -- : [1bd608bf-fcd1-4d3f-848a-63b308a87d10]   Rendering index/home.html.erb within layouts/application
+I, [2017-08-17T16:43:24.573075 #7752]  INFO -- : [1bd608bf-fcd1-4d3f-848a-63b308a87d10]   Rendered index/home.html.erb within layouts/application (1.0ms)
+I, [2017-08-17T16:43:24.577079 #7752]  INFO -- : [1bd608bf-fcd1-4d3f-848a-63b308a87d10] Completed 200 OK in 7ms (Views: 5.8ms)
+I, [2017-08-17T16:43:24.730307 #7752]  INFO -- : [4f4dfa0a-411d-499d-9442-f5c258e96d9c] Started GET "/" for 127.0.0.1 at 2017-08-17 16:43:24 -0600
+I, [2017-08-17T16:43:24.731311 #7752]  INFO -- : [4f4dfa0a-411d-499d-9442-f5c258e96d9c] Processing by IndexController#home as HTML
+I, [2017-08-17T16:43:24.732811 #7752]  INFO -- : [4f4dfa0a-411d-499d-9442-f5c258e96d9c]   Rendering index/home.html.erb within layouts/application
+I, [2017-08-17T16:43:24.734813 #7752]  INFO -- : [4f4dfa0a-411d-499d-9442-f5c258e96d9c]   Rendered index/home.html.erb within layouts/application (1.5ms)
+I, [2017-08-17T16:43:24.739817 #7752]  INFO -- : [4f4dfa0a-411d-499d-9442-f5c258e96d9c] Completed 200 OK in 8ms (Views: 6.9ms)
+I, [2017-08-17T16:43:24.891644 #7752]  INFO -- : [eabb0f1b-ccc4-4f12-8f0e-ad6a90350d09] Started GET "/" for 127.0.0.1 at 2017-08-17 16:43:24 -0600
+I, [2017-08-17T16:43:24.892645 #7752]  INFO -- : [eabb0f1b-ccc4-4f12-8f0e-ad6a90350d09] Processing by IndexController#home as HTML
+I, [2017-08-17T16:43:24.895653 #7752]  INFO -- : [eabb0f1b-ccc4-4f12-8f0e-ad6a90350d09]   Rendering index/home.html.erb within layouts/application
+I, [2017-08-17T16:43:24.898649 #7752]  INFO -- : [eabb0f1b-ccc4-4f12-8f0e-ad6a90350d09]   Rendered index/home.html.erb within layouts/application (3.0ms)
+I, [2017-08-17T16:43:24.902651 #7752]  INFO -- : [eabb0f1b-ccc4-4f12-8f0e-ad6a90350d09] Completed 200 OK in 9ms (Views: 7.4ms)
+I, [2017-08-17T16:43:30.997293 #7752]  INFO -- : [8794bc40-ecb2-47df-b211-190b397cf70e] Started GET "/questions" for 127.0.0.1 at 2017-08-17 16:43:30 -0600
+I, [2017-08-17T16:43:31.000295 #7752]  INFO -- : [8794bc40-ecb2-47df-b211-190b397cf70e] Processing by QuestionsController#index as HTML
+I, [2017-08-17T16:43:31.002295 #7752]  INFO -- : [8794bc40-ecb2-47df-b211-190b397cf70e] Completed 401 Unauthorized in 1ms
+I, [2017-08-17T16:43:31.088728 #7752]  INFO -- : [cf59609e-fae9-4b6e-982d-822ef3e14cfe] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-17 16:43:31 -0600
+I, [2017-08-17T16:43:31.089702 #7752]  INFO -- : [cf59609e-fae9-4b6e-982d-822ef3e14cfe] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-17T16:43:31.091703 #7752]  INFO -- : [cf59609e-fae9-4b6e-982d-822ef3e14cfe] Completed 500 Internal Server Error in 2ms
+F, [2017-08-17T16:43:31.093705 #7752] FATAL -- : [cf59609e-fae9-4b6e-982d-822ef3e14cfe]   
+F, [2017-08-17T16:43:31.093705 #7752] FATAL -- : [cf59609e-fae9-4b6e-982d-822ef3e14cfe] Mysql2::Error (Unknown MySQL server host '192.241.129.84:3306' (0)):
+F, [2017-08-17T16:43:31.093705 #7752] FATAL -- : [cf59609e-fae9-4b6e-982d-822ef3e14cfe]   
+F, [2017-08-17T16:43:31.094706 #7752] FATAL -- : [cf59609e-fae9-4b6e-982d-822ef3e14cfe] mysql2-0.4.7-x86 (mingw32) lib/mysql2/client.rb:89:in `connect'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] mysql2-0.4.7-x86 (mingw32) lib/mysql2/client.rb:89:in `initialize'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/connection_handling.rb:88:in `connection'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/model_schema.rb:471:in `load_schema!'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/attributes.rb:233:in `load_schema!'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/attribute_decorators.rb:50:in `load_schema!'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/model_schema.rb:464:in `block in load_schema'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] C:/RailsInstaller/Ruby2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/model_schema.rb:461:in `load_schema'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/model_schema.rb:353:in `attribute_types'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/attribute_methods.rb:179:in `has_attribute?'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/inheritance.rb:55:in `new'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] devise (4.3.0) app/controllers/devise/sessions_controller.rb:9:in `new'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/abstract_controller/base.rb:186:in `process_action'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activesupport (5.1.2) lib/active_support/callbacks.rb:131:in `run_callbacks'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] warden (1.2.7) lib/warden/manager.rb:35:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] rack (2.0.3) lib/rack/etag.rb:25:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] rack (2.0.3) lib/rack/head.rb:12:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[cf59609e-fae9-4b6e-982d-822ef3e14cfe] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+D, [2017-08-17T16:51:33.137360 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-08-17T16:51:33.405618 #13488] DEBUG -- :   [1m[35m (252.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+D, [2017-08-17T16:51:33.537453 #13488] DEBUG -- :   [1m[35m (116.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2017-08-17T16:51:33.537453 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2017-08-17T16:51:33.553072 #13488] DEBUG -- :   [1m[35m (15.6ms)[0m  [1m[34mSELECT GET_LOCK(1764259579623144765, 0)[0m
+D, [2017-08-17T16:51:33.702735 #13488] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+I, [2017-08-17T16:51:33.703236 #13488]  INFO -- : Migrating to CreateQuestions (20170705174439)
+D, [2017-08-17T16:51:33.869568 #13488] DEBUG -- :   [1m[35m (115.9ms)[0m  [1m[35mCREATE TABLE `questions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `identifier` varchar(255), `description` varchar(255), `image_file_name` varchar(255), `image_content_type` varchar(255), `image_file_size` int, `image_updated_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2017-08-17T16:51:33.869568 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:33.885181 #13488] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170705174439')[0m
+D, [2017-08-17T16:51:33.938615 #13488] DEBUG -- :   [1m[35m (53.4ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:33.938615 #13488]  INFO -- : Migrating to CreateAnswers (20170705174500)
+D, [2017-08-17T16:51:34.099963 #13488] DEBUG -- :   [1m[35m (145.2ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `question_id` bigint, `description` varchar(255), `image_file_name` varchar(255), `image_content_type` varchar(255), `image_file_size` int, `image_updated_at` datetime, `value` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_answers_on_question_id`  (`question_id`), CONSTRAINT `fk_rails_3d5ed4418f`
+FOREIGN KEY (`question_id`)
+  REFERENCES `questions` (`id`)
+) ENGINE=InnoDB[0m
+D, [2017-08-17T16:51:34.104450 #13488] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:34.106954 #13488] DEBUG -- :   [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170705174500')[0m
+D, [2017-08-17T16:51:34.154840 #13488] DEBUG -- :   [1m[35m (46.9ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:34.154840 #13488]  INFO -- : Migrating to CreateTests (20170714005610)
+D, [2017-08-17T16:51:34.454826 #13488] DEBUG -- :   [1m[35m (168.8ms)[0m  [1m[35mCREATE TABLE `tests` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `indentifier` varchar(255), `description` varchar(255), `time` time, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2017-08-17T16:51:34.454826 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:34.454826 #13488] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170714005610')[0m
+D, [2017-08-17T16:51:34.523503 #13488] DEBUG -- :   [1m[35m (68.7ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:34.523503 #13488]  INFO -- : Migrating to CreateRelations (20170714010938)
+D, [2017-08-17T16:51:34.754962 #13488] DEBUG -- :   [1m[35m (84.7ms)[0m  [1m[35mCREATE TABLE `relations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `test_id` bigint, `question_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_relations_on_test_id`  (`test_id`),  INDEX `index_relations_on_question_id`  (`question_id`), CONSTRAINT `fk_rails_33aa08e6d3`
+FOREIGN KEY (`test_id`)
+  REFERENCES `tests` (`id`)
+, CONSTRAINT `fk_rails_d7e126f852`
+FOREIGN KEY (`question_id`)
+  REFERENCES `questions` (`id`)
+) ENGINE=InnoDB[0m
+D, [2017-08-17T16:51:34.770571 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:34.770571 #13488] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170714010938')[0m
+D, [2017-08-17T16:51:34.823646 #13488] DEBUG -- :   [1m[35m (53.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:34.823646 #13488]  INFO -- : Migrating to CreateCareers (20170714204540)
+D, [2017-08-17T16:51:34.907779 #13488] DEBUG -- :   [1m[35m (68.5ms)[0m  [1m[35mCREATE TABLE `careers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `test_id` bigint, `career` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_careers_on_test_id`  (`test_id`), CONSTRAINT `fk_rails_330549c6fb`
+FOREIGN KEY (`test_id`)
+  REFERENCES `tests` (`id`)
+) ENGINE=InnoDB[0m
+D, [2017-08-17T16:51:34.907779 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:34.907779 #13488] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170714204540')[0m
+D, [2017-08-17T16:51:34.970438 #13488] DEBUG -- :   [1m[35m (46.9ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:34.970438 #13488]  INFO -- : Migrating to Type (20170716050624)
+D, [2017-08-17T16:51:35.003204 #13488] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:35.006193 #13488] DEBUG -- :   [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170716050624')[0m
+D, [2017-08-17T16:51:35.054773 #13488] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:35.054773 #13488]  INFO -- : Migrating to Questiontype (20170716051800)
+D, [2017-08-17T16:51:35.255351 #13488] DEBUG -- :   [1m[35m (185.0ms)[0m  [1m[35mALTER TABLE `questions` ADD `type` varchar(255)[0m
+D, [2017-08-17T16:51:35.255351 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:35.270958 #13488] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170716051800')[0m
+D, [2017-08-17T16:51:35.324309 #13488] DEBUG -- :   [1m[35m (53.4ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:35.324309 #13488]  INFO -- : Migrating to Type3 (20170716052656)
+D, [2017-08-17T16:51:35.507348 #13488] DEBUG -- :   [1m[35m (167.4ms)[0m  [1m[35mALTER TABLE `questions` DROP `type`[0m
+D, [2017-08-17T16:51:35.686754 #13488] DEBUG -- :   [1m[35m (178.4ms)[0m  [1m[35mALTER TABLE `questions` ADD `question_type` varchar(255)[0m
+D, [2017-08-17T16:51:35.686754 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:35.703402 #13488] DEBUG -- :   [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170716052656')[0m
+D, [2017-08-17T16:51:35.755412 #13488] DEBUG -- :   [1m[35m (51.0ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:35.755412 #13488]  INFO -- : Migrating to Answer (20170716053607)
+D, [2017-08-17T16:51:35.924352 #13488] DEBUG -- :   [1m[35m (153.3ms)[0m  [1m[35mALTER TABLE `answers` ADD `content` varchar(255)[0m
+D, [2017-08-17T16:51:36.124137 #13488] DEBUG -- :   [1m[35m (199.8ms)[0m  [1m[35mALTER TABLE `answers` ADD `message` varchar(255)[0m
+D, [2017-08-17T16:51:36.124137 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:36.139747 #13488] DEBUG -- :   [1m[35mSQL (15.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170716053607')[0m
+D, [2017-08-17T16:51:36.190602 #13488] DEBUG -- :   [1m[35m (50.9ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:36.191602 #13488]  INFO -- : Migrating to CreateClassifications (20170723174543)
+D, [2017-08-17T16:51:36.324334 #13488] DEBUG -- :   [1m[35m (99.9ms)[0m  [1m[35mCREATE TABLE `classifications` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2017-08-17T16:51:36.324334 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:36.324334 #13488] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170723174543')[0m
+D, [2017-08-17T16:51:36.371230 #13488] DEBUG -- :   [1m[35m (46.9ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:36.371230 #13488]  INFO -- : Migrating to Index (20170723180813)
+D, [2017-08-17T16:51:36.539792 #13488] DEBUG -- :   [1m[35m (153.0ms)[0m  [1m[35mALTER TABLE `questions` ADD `classification_id` bigint[0m
+D, [2017-08-17T16:51:36.670911 #13488] DEBUG -- :   [1m[35m (131.1ms)[0m  [1m[35mCREATE  INDEX `index_questions_on_classification_id`  ON `questions` (`classification_id`) [0m
+D, [2017-08-17T16:51:36.670911 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:36.670911 #13488] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170723180813')[0m
+D, [2017-08-17T16:51:36.724189 #13488] DEBUG -- :   [1m[35m (53.3ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:36.724189 #13488]  INFO -- : Migrating to CreateStudents (20170724164709)
+D, [2017-08-17T16:51:36.839750 #13488] DEBUG -- :   [1m[35m (84.3ms)[0m  [1m[35mCREATE TABLE `students` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `lastname` varchar(255), `second_lastname` varchar(255), `identifier` varchar(255), `gender` varchar(255), `birth_date` date, `career` varchar(255), `high_school` varchar(255), `answers` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2017-08-17T16:51:36.839750 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:36.855334 #13488] DEBUG -- :   [1m[35mSQL (15.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170724164709')[0m
+D, [2017-08-17T16:51:36.908233 #13488] DEBUG -- :   [1m[35m (52.9ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:36.908233 #13488]  INFO -- : Migrating to DeviseCreateUsers (20170729180212)
+D, [2017-08-17T16:51:37.070758 #13488] DEBUG -- :   [1m[35m (131.2ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `role` varchar(255), `name` varchar(255), `last_name` varchar(255), `second_last_name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2017-08-17T16:51:37.205464 #13488] DEBUG -- :   [1m[35m (119.1ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+D, [2017-08-17T16:51:37.354901 #13488] DEBUG -- :   [1m[35m (146.9ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+D, [2017-08-17T16:51:37.354901 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:37.354901 #13488] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170729180212')[0m
+D, [2017-08-17T16:51:37.423509 #13488] DEBUG -- :   [1m[35m (68.6ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:37.423509 #13488]  INFO -- : Migrating to AddSessionsTable (20170730031305)
+D, [2017-08-17T16:51:37.524401 #13488] DEBUG -- :   [1m[35m (85.3ms)[0m  [1m[35mCREATE TABLE `sessions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2017-08-17T16:51:37.640810 #13488] DEBUG -- :   [1m[35m (116.4ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_sessions_on_session_id`  ON `sessions` (`session_id`) [0m
+D, [2017-08-17T16:51:37.756405 #13488] DEBUG -- :   [1m[35m (115.6ms)[0m  [1m[35mCREATE  INDEX `index_sessions_on_updated_at`  ON `sessions` (`updated_at`) [0m
+D, [2017-08-17T16:51:37.756405 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:37.756405 #13488] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170730031305')[0m
+D, [2017-08-17T16:51:37.809297 #13488] DEBUG -- :   [1m[35m (52.9ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T16:51:37.825078 #13488]  INFO -- : Migrating to Student (20170808005331)
+D, [2017-08-17T16:51:38.040742 #13488] DEBUG -- :   [1m[35m (200.0ms)[0m  [1m[35mALTER TABLE `students` ADD `test` varchar(255)[0m
+D, [2017-08-17T16:51:38.040742 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:38.040742 #13488] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170808005331')[0m
+D, [2017-08-17T16:51:38.107771 #13488] DEBUG -- :   [1m[35m (66.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-17T16:51:38.241263 #13488] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2017-08-17T16:51:38.241263 #13488] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:51:38.256894 #13488] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'production', '2017-08-17 22:51:38', '2017-08-17 22:51:38')[0m
+D, [2017-08-17T16:51:38.310336 #13488] DEBUG -- :   [1m[35m (53.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-17T16:51:38.325960 #13488] DEBUG -- :   [1m[35m (15.6ms)[0m  [1m[34mSELECT RELEASE_LOCK(1764259579623144765)[0m
+D, [2017-08-17T16:52:12.097956 #7740] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-08-17T16:52:12.113580 #7740] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2017-08-17T16:52:12.113580 #7740] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK(1764259579623144765, 0)[0m
+D, [2017-08-17T16:52:12.166964 #7740] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2017-08-17T16:52:12.182585 #7740] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2017-08-17T16:52:12.182585 #7740] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:52:12.182585 #7740] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-17T16:52:12.182585 #7740] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(1764259579623144765)[0m
+D, [2017-08-17T16:52:34.994046 #6920] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-08-17T16:52:35.025308 #6920] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2017-08-17T16:52:35.025308 #6920] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK(1764259579623144765, 0)[0m
+D, [2017-08-17T16:52:35.072572 #6920] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2017-08-17T16:52:35.088266 #6920] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2017-08-17T16:52:35.103873 #6920] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:52:35.103873 #6920] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-17T16:52:35.103873 #6920] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(1764259579623144765)[0m
+D, [2017-08-17T16:52:55.066008 #9156] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-08-17T16:52:55.081619 #9156] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2017-08-17T16:52:55.081619 #9156] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK(1764259579623144765, 0)[0m
+D, [2017-08-17T16:52:55.281889 #9156] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2017-08-17T16:52:55.466201 #9156] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2017-08-17T16:52:55.481826 #9156] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:52:55.481826 #9156] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-17T16:52:55.481826 #9156] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(1764259579623144765)[0m
+D, [2017-08-17T16:53:55.720371 #2792] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-08-17T16:53:55.738381 #2792] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2017-08-17T16:53:55.739381 #2792] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK(1764259579623144765, 0)[0m
+D, [2017-08-17T16:53:55.784412 #2792] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2017-08-17T16:53:55.801928 #2792] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2017-08-17T16:53:55.810935 #2792] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:53:55.812436 #2792] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-17T16:53:55.812935 #2792] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK(1764259579623144765)[0m
+D, [2017-08-17T16:54:29.130375 #14880] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-08-17T16:54:29.145995 #14880] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2017-08-17T16:54:29.145995 #14880] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK(1764259579623144765, 0)[0m
+D, [2017-08-17T16:54:29.197383 #14880] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2017-08-17T16:54:29.199385 #14880] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2017-08-17T16:54:29.215015 #14880] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:54:29.215015 #14880] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-17T16:54:29.215015 #14880] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(1764259579623144765)[0m
+D, [2017-08-17T16:54:40.000538 #13620] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-08-17T16:54:40.022189 #13620] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2017-08-17T16:54:40.022189 #13620] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK(1764259579623144765, 0)[0m
+D, [2017-08-17T16:54:40.069103 #13620] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2017-08-17T16:54:40.084729 #13620] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2017-08-17T16:54:40.100356 #13620] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T16:54:40.100356 #13620] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-17T16:54:40.100356 #13620] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(1764259579623144765)[0m
+D, [2017-08-17T17:07:06.679775 #8968] DEBUG -- :   [1m[35m (146.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-08-17T17:07:07.196739 #8968] DEBUG -- :   [1m[35m (100.7ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2017-08-17T17:07:07.312294 #8968] DEBUG -- :   [1m[35m (115.6ms)[0m  [1m[34mSELECT GET_LOCK(1764259579623144765, 0)[0m
+D, [2017-08-17T17:07:07.713154 #8968] DEBUG -- :   [1m[35m (115.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2017-08-17T17:07:07.948677 #8968] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (118.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2017-08-17T17:07:08.253687 #8968] DEBUG -- :   [1m[35m (184.6ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T17:07:08.369612 #8968] DEBUG -- :   [1m[35m (115.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-17T17:07:08.469917 #8968] DEBUG -- :   [1m[35m (100.3ms)[0m  [1m[34mSELECT RELEASE_LOCK(1764259579623144765)[0m
+D, [2017-08-17T17:07:21.018238 #11036] DEBUG -- :   [1m[35m (84.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-08-17T17:07:21.503804 #11036] DEBUG -- :   [1m[35m (115.7ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2017-08-17T17:07:21.650627 #11036] DEBUG -- :   [1m[35m (146.8ms)[0m  [1m[34mSELECT GET_LOCK(1764259579623144765, 0)[0m
+D, [2017-08-17T17:07:22.019523 #11036] DEBUG -- :   [1m[35m (115.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2017-08-17T17:07:22.203728 #11036] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (84.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2017-08-17T17:07:22.450448 #11036] DEBUG -- :   [1m[35m (99.9ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T17:07:22.634703 #11036] DEBUG -- :   [1m[35m (184.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-17T17:07:22.765919 #11036] DEBUG -- :   [1m[35m (131.2ms)[0m  [1m[34mSELECT RELEASE_LOCK(1764259579623144765)[0m
+I, [2017-08-17T17:14:36.116753 #17240]  INFO -- : [05f7bd7a-6b33-4514-9bc4-6c22f4e72a43] Started GET "/" for 127.0.0.1 at 2017-08-17 17:14:36 -0600
+I, [2017-08-17T17:14:36.130762 #17240]  INFO -- : [05f7bd7a-6b33-4514-9bc4-6c22f4e72a43] Processing by IndexController#home as HTML
+I, [2017-08-17T17:14:36.224832 #17240]  INFO -- : [05f7bd7a-6b33-4514-9bc4-6c22f4e72a43]   Rendering index/home.html.erb within layouts/application
+I, [2017-08-17T17:14:36.696172 #17240]  INFO -- : [05f7bd7a-6b33-4514-9bc4-6c22f4e72a43]   Rendered index/home.html.erb within layouts/application (471.3ms)
+I, [2017-08-17T17:14:36.705178 #17240]  INFO -- : [05f7bd7a-6b33-4514-9bc4-6c22f4e72a43] Completed 200 OK in 573ms (Views: 543.4ms)
+I, [2017-08-17T17:14:36.816266 #17240]  INFO -- : [7c259ee6-bbf7-4e1b-b495-ba60930e534d] Started GET "/assets/fontawesome-webfont.woff2?v=4.6.2" for 127.0.0.1 at 2017-08-17 17:14:36 -0600
+I, [2017-08-17T17:14:36.981389 #17240]  INFO -- : [169243e7-f2a5-4955-96a1-809887d5675c] Started GET "/index/test.json" for 127.0.0.1 at 2017-08-17 17:14:36 -0600
+I, [2017-08-17T17:14:36.982389 #17240]  INFO -- : [169243e7-f2a5-4955-96a1-809887d5675c] Processing by IndexController#test as JSON
+I, [2017-08-17T17:14:36.985393 #17240]  INFO -- : [169243e7-f2a5-4955-96a1-809887d5675c] Redirected to http://localhost:3000/index/info
+I, [2017-08-17T17:14:36.985393 #17240]  INFO -- : [169243e7-f2a5-4955-96a1-809887d5675c] Completed 302 Found in 3ms
+I, [2017-08-17T17:14:37.018922 #17240]  INFO -- : [fe680f72-50b1-4be0-9e80-cb84ea6782ff] Started GET "/index/info" for 127.0.0.1 at 2017-08-17 17:14:37 -0600
+I, [2017-08-17T17:14:37.019921 #17240]  INFO -- : [fe680f72-50b1-4be0-9e80-cb84ea6782ff] Processing by IndexController#info as JSON
+D, [2017-08-17T17:14:37.503598 #17240] DEBUG -- : [fe680f72-50b1-4be0-9e80-cb84ea6782ff]   [1m[35m (117.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+I, [2017-08-17T17:14:38.171237 #17240]  INFO -- : [fe680f72-50b1-4be0-9e80-cb84ea6782ff]   Rendering index/info.html.erb within layouts/application
+D, [2017-08-17T17:14:38.508961 #17240] DEBUG -- : [fe680f72-50b1-4be0-9e80-cb84ea6782ff]   [1m[36mCareer Load (99.1ms)[0m  [1m[34mSELECT `careers`.* FROM `careers`[0m
+I, [2017-08-17T17:14:38.822186 #17240]  INFO -- : [fe680f72-50b1-4be0-9e80-cb84ea6782ff]   Rendered index/_form.html.erb (435.8ms)
+I, [2017-08-17T17:14:38.823187 #17240]  INFO -- : [fe680f72-50b1-4be0-9e80-cb84ea6782ff]   Rendered index/info.html.erb within layouts/application (652.0ms)
+I, [2017-08-17T17:14:38.825691 #17240]  INFO -- : [fe680f72-50b1-4be0-9e80-cb84ea6782ff] Completed 200 OK in 1806ms (Views: 251.3ms | ActiveRecord: 905.6ms)
+I, [2017-08-17T17:14:41.655980 #17240]  INFO -- : [7af373dd-f2f9-44fb-85fb-c5bec281b66a] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-17 17:14:41 -0600
+I, [2017-08-17T17:14:41.658984 #17240]  INFO -- : [7af373dd-f2f9-44fb-85fb-c5bec281b66a] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-17T17:14:42.587874 #17240]  INFO -- : [7af373dd-f2f9-44fb-85fb-c5bec281b66a]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-17T17:14:42.595880 #17240]  INFO -- : [7af373dd-f2f9-44fb-85fb-c5bec281b66a]   Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+I, [2017-08-17T17:14:42.598883 #17240]  INFO -- : [7af373dd-f2f9-44fb-85fb-c5bec281b66a] Completed 200 OK in 940ms (Views: 578.7ms | ActiveRecord: 223.0ms)
+I, [2017-08-17T17:14:43.870754 #17240]  INFO -- : [762b41c5-4816-4e0f-9da6-c6ca03e006a1] Started POST "/users/sign_in" for 127.0.0.1 at 2017-08-17 17:14:43 -0600
+I, [2017-08-17T17:14:43.871754 #17240]  INFO -- : [762b41c5-4816-4e0f-9da6-c6ca03e006a1] Processing by Devise::SessionsController#create as HTML
+I, [2017-08-17T17:14:43.872254 #17240]  INFO -- : [762b41c5-4816-4e0f-9da6-c6ca03e006a1]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jbz+NAgnU0hwuNmq0PVbJNFiMHttKEtdzUMq0vLW279pCNGzIiNvr84VdV/0dsAOOi/H1rDgL4SF+sqpG+psGw==", "user"=>{"email"=>"juanvegaquesada@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Ingresar"}
+D, [2017-08-17T17:14:44.083895 #17240] DEBUG -- : [762b41c5-4816-4e0f-9da6-c6ca03e006a1]   [1m[36mUser Load (101.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'juanvegaquesada@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+D, [2017-08-17T17:14:44.377090 #17240] DEBUG -- : [762b41c5-4816-4e0f-9da6-c6ca03e006a1]   [1m[35m (94.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-17T17:14:44.499169 #17240] DEBUG -- : [762b41c5-4816-4e0f-9da6-c6ca03e006a1]   [1m[35mSQL (118.6ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2017-08-17 23:14:44', `last_sign_in_at` = '2017-08-17 19:37:06', `current_sign_in_ip` = '127.0.0.1', `last_sign_in_ip` = '15.203.233.78', `sign_in_count` = 19, `updated_at` = '2017-08-17 23:14:44' WHERE `users`.`id` = 1[0m
+D, [2017-08-17T17:14:44.607241 #17240] DEBUG -- : [762b41c5-4816-4e0f-9da6-c6ca03e006a1]   [1m[35m (107.6ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-17T17:14:44.741888 #17240]  INFO -- : [762b41c5-4816-4e0f-9da6-c6ca03e006a1] Redirected to http://localhost:3000/questions
+I, [2017-08-17T17:14:44.742388 #17240]  INFO -- : [762b41c5-4816-4e0f-9da6-c6ca03e006a1] Completed 302 Found in 870ms (ActiveRecord: 421.8ms)
+I, [2017-08-17T17:14:44.753895 #17240]  INFO -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1] Started GET "/questions" for 127.0.0.1 at 2017-08-17 17:14:44 -0600
+I, [2017-08-17T17:14:44.755897 #17240]  INFO -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1] Processing by QuestionsController#index as HTML
+D, [2017-08-17T17:14:45.095125 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mUser Load (102.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2017-08-17T17:14:45.171677 #17240]  INFO -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   Rendering questions/index.html.erb within layouts/application
+D, [2017-08-17T17:14:45.406349 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mQuestion Load (233.2ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+D, [2017-08-17T17:14:46.065808 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mClassification Load (171.1ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m
+D, [2017-08-17T17:14:46.172377 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mClassification Load (98.1ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m
+D, [2017-08-17T17:14:46.174378 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.175379 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.176880 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.327010 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mClassification Load (149.1ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m
+D, [2017-08-17T17:14:46.329013 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.330514 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.332015 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.333016 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.334517 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.336018 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.338019 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.339520 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.341022 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.342022 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.343523 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.345030 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.346523 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.348026 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.349526 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.351026 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.352527 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.354028 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.356031 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.357532 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.359035 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.360535 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.361535 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.363036 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.364537 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.365538 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.367039 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.368039 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.369540 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.371041 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.373041 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.374045 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.375545 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.377045 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.378546 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.379547 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.381048 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.382049 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.383550 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.385051 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.386551 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.388051 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.389552 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.391055 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.392055 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.393556 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.395058 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.396559 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.397559 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.399058 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.400561 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.402060 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.404061 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.405564 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.407066 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.408066 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.409567 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.411066 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.412067 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.414069 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.416071 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.417572 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.418573 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.420074 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.421573 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.423074 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.424575 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.426078 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:14:46.427079 #17240] DEBUG -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+I, [2017-08-17T17:14:46.428079 #17240]  INFO -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1]   Rendered questions/index.html.erb within layouts/application (1255.9ms)
+I, [2017-08-17T17:14:46.431081 #17240]  INFO -- : [b4086ae6-3d0c-452a-98c4-251d92df5cb1] Completed 200 OK in 1675ms (Views: 230.5ms | ActiveRecord: 1173.3ms)
+I, [2017-08-17T17:14:46.454599 #17240]  INFO -- : [6e67fa77-0246-4719-9a71-6fb2637878bc] Started GET "/system/questions/images/000/000/066/original/10.PNG?1502838750" for 127.0.0.1 at 2017-08-17 17:14:46 -0600
+F, [2017-08-17T17:14:46.455599 #17240] FATAL -- : [6e67fa77-0246-4719-9a71-6fb2637878bc]   
+F, [2017-08-17T17:14:46.455599 #17240] FATAL -- : [6e67fa77-0246-4719-9a71-6fb2637878bc] ActionController::RoutingError (No route matches [GET] "/system/questions/images/000/000/066/original/10.PNG"):
+F, [2017-08-17T17:14:46.456100 #17240] FATAL -- : [6e67fa77-0246-4719-9a71-6fb2637878bc]   
+F, [2017-08-17T17:14:46.456100 #17240] FATAL -- : [6e67fa77-0246-4719-9a71-6fb2637878bc] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[6e67fa77-0246-4719-9a71-6fb2637878bc] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-17T17:14:46.512171 #17240]  INFO -- : [8e6ca845-0d40-4f40-b156-e5edce84c743] Started GET "/assets/fontawesome-webfont.woff2?v=4.6.2" for 127.0.0.1 at 2017-08-17 17:14:46 -0600
+I, [2017-08-17T17:14:46.523679 #17240]  INFO -- : [74b39797-d5bb-4bb5-9e19-0f4987be00a8] Started GET "/system/questions/images/000/000/067/original/66.PNG?1502839100" for 127.0.0.1 at 2017-08-17 17:14:46 -0600
+F, [2017-08-17T17:14:46.524680 #17240] FATAL -- : [74b39797-d5bb-4bb5-9e19-0f4987be00a8]   
+F, [2017-08-17T17:14:46.524680 #17240] FATAL -- : [74b39797-d5bb-4bb5-9e19-0f4987be00a8] ActionController::RoutingError (No route matches [GET] "/system/questions/images/000/000/067/original/66.PNG"):
+F, [2017-08-17T17:14:46.524680 #17240] FATAL -- : [74b39797-d5bb-4bb5-9e19-0f4987be00a8]   
+F, [2017-08-17T17:14:46.525179 #17240] FATAL -- : [74b39797-d5bb-4bb5-9e19-0f4987be00a8] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[74b39797-d5bb-4bb5-9e19-0f4987be00a8] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-17T17:14:46.536187 #17240]  INFO -- : [7e94d80a-01d8-4970-8084-95b7e2588642] Started GET "/system/questions/images/000/000/068/original/10.PNG?1502839239" for 127.0.0.1 at 2017-08-17 17:14:46 -0600
+F, [2017-08-17T17:14:46.537188 #17240] FATAL -- : [7e94d80a-01d8-4970-8084-95b7e2588642]   
+F, [2017-08-17T17:14:46.537688 #17240] FATAL -- : [7e94d80a-01d8-4970-8084-95b7e2588642] ActionController::RoutingError (No route matches [GET] "/system/questions/images/000/000/068/original/10.PNG"):
+F, [2017-08-17T17:14:46.537688 #17240] FATAL -- : [7e94d80a-01d8-4970-8084-95b7e2588642]   
+F, [2017-08-17T17:14:46.537688 #17240] FATAL -- : [7e94d80a-01d8-4970-8084-95b7e2588642] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[7e94d80a-01d8-4970-8084-95b7e2588642] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[7e94d80a-01d8-4970-8084-95b7e2588642] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[7e94d80a-01d8-4970-8084-95b7e2588642] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[7e94d80a-01d8-4970-8084-95b7e2588642] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[7e94d80a-01d8-4970-8084-95b7e2588642] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[7e94d80a-01d8-4970-8084-95b7e2588642] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[7e94d80a-01d8-4970-8084-95b7e2588642] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[7e94d80a-01d8-4970-8084-95b7e2588642] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[7e94d80a-01d8-4970-8084-95b7e2588642] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[7e94d80a-01d8-4970-8084-95b7e2588642] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[7e94d80a-01d8-4970-8084-95b7e2588642] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[7e94d80a-01d8-4970-8084-95b7e2588642] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[7e94d80a-01d8-4970-8084-95b7e2588642] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[7e94d80a-01d8-4970-8084-95b7e2588642] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[7e94d80a-01d8-4970-8084-95b7e2588642] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[7e94d80a-01d8-4970-8084-95b7e2588642] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[7e94d80a-01d8-4970-8084-95b7e2588642] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[7e94d80a-01d8-4970-8084-95b7e2588642] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[7e94d80a-01d8-4970-8084-95b7e2588642] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-17T17:14:46.614242 #17240]  INFO -- : [fc9f40ad-cf31-43c4-a354-8db3731b040a] Started GET "/index/test.json" for 127.0.0.1 at 2017-08-17 17:14:46 -0600
+I, [2017-08-17T17:14:46.615243 #17240]  INFO -- : [fc9f40ad-cf31-43c4-a354-8db3731b040a] Processing by IndexController#test as JSON
+I, [2017-08-17T17:14:46.616243 #17240]  INFO -- : [fc9f40ad-cf31-43c4-a354-8db3731b040a] Redirected to http://localhost:3000/index/info
+I, [2017-08-17T17:14:46.617244 #17240]  INFO -- : [fc9f40ad-cf31-43c4-a354-8db3731b040a] Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+I, [2017-08-17T17:14:46.642260 #17240]  INFO -- : [525c52e6-be33-4dba-a77a-be8a7f37bb5e] Started GET "/index/info" for 127.0.0.1 at 2017-08-17 17:14:46 -0600
+I, [2017-08-17T17:14:46.643261 #17240]  INFO -- : [525c52e6-be33-4dba-a77a-be8a7f37bb5e] Processing by IndexController#info as JSON
+I, [2017-08-17T17:14:46.644261 #17240]  INFO -- : [525c52e6-be33-4dba-a77a-be8a7f37bb5e]   Rendering index/info.html.erb within layouts/application
+D, [2017-08-17T17:14:46.957674 #17240] DEBUG -- : [525c52e6-be33-4dba-a77a-be8a7f37bb5e]   [1m[36mCareer Load (192.1ms)[0m  [1m[34mSELECT `careers`.* FROM `careers`[0m
+I, [2017-08-17T17:14:46.957674 #17240]  INFO -- : [525c52e6-be33-4dba-a77a-be8a7f37bb5e]   Rendered index/_form.html.erb (312.4ms)
+I, [2017-08-17T17:14:46.957674 #17240]  INFO -- : [525c52e6-be33-4dba-a77a-be8a7f37bb5e]   Rendered index/info.html.erb within layouts/application (313.4ms)
+D, [2017-08-17T17:14:47.065429 #17240] DEBUG -- : [525c52e6-be33-4dba-a77a-be8a7f37bb5e]   [1m[36mUser Load (107.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2017-08-17T17:14:47.067427 #17240]  INFO -- : [525c52e6-be33-4dba-a77a-be8a7f37bb5e] Completed 200 OK in 424ms (Views: 123.3ms | ActiveRecord: 299.9ms)
+I, [2017-08-17T17:15:10.995555 #17240]  INFO -- : [55db553a-18a3-4ede-9a87-ca2752452407] Started GET "/classifications" for 127.0.0.1 at 2017-08-17 17:15:10 -0600
+I, [2017-08-17T17:15:11.002060 #17240]  INFO -- : [55db553a-18a3-4ede-9a87-ca2752452407] Processing by ClassificationsController#index as HTML
+D, [2017-08-17T17:15:11.408036 #17240] DEBUG -- : [55db553a-18a3-4ede-9a87-ca2752452407]   [1m[36mUser Load (300.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2017-08-17T17:15:11.642328 #17240]  INFO -- : [55db553a-18a3-4ede-9a87-ca2752452407]   Rendering classifications/index.html.erb within layouts/application
+D, [2017-08-17T17:15:11.822507 #17240] DEBUG -- : [55db553a-18a3-4ede-9a87-ca2752452407]   [1m[36mClassification Load (178.2ms)[0m  [1m[34mSELECT `classifications`.* FROM `classifications`[0m
+I, [2017-08-17T17:15:11.826514 #17240]  INFO -- : [55db553a-18a3-4ede-9a87-ca2752452407]   Rendered classifications/index.html.erb within layouts/application (184.2ms)
+I, [2017-08-17T17:15:11.831514 #17240]  INFO -- : [55db553a-18a3-4ede-9a87-ca2752452407] Completed 200 OK in 829ms (Views: 81.7ms | ActiveRecord: 478.3ms)
+I, [2017-08-17T17:15:11.860535 #17240]  INFO -- : [a3217347-a97e-491e-aa2e-868d505a3876] Started GET "/system/questions/images/000/000/067/original/66.PNG?1502839100" for 127.0.0.1 at 2017-08-17 17:15:11 -0600
+F, [2017-08-17T17:15:11.862538 #17240] FATAL -- : [a3217347-a97e-491e-aa2e-868d505a3876]   
+F, [2017-08-17T17:15:11.862538 #17240] FATAL -- : [a3217347-a97e-491e-aa2e-868d505a3876] ActionController::RoutingError (No route matches [GET] "/system/questions/images/000/000/067/original/66.PNG"):
+F, [2017-08-17T17:15:11.863535 #17240] FATAL -- : [a3217347-a97e-491e-aa2e-868d505a3876]   
+F, [2017-08-17T17:15:11.863535 #17240] FATAL -- : [a3217347-a97e-491e-aa2e-868d505a3876] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[a3217347-a97e-491e-aa2e-868d505a3876] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[a3217347-a97e-491e-aa2e-868d505a3876] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[a3217347-a97e-491e-aa2e-868d505a3876] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[a3217347-a97e-491e-aa2e-868d505a3876] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[a3217347-a97e-491e-aa2e-868d505a3876] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[a3217347-a97e-491e-aa2e-868d505a3876] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[a3217347-a97e-491e-aa2e-868d505a3876] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[a3217347-a97e-491e-aa2e-868d505a3876] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[a3217347-a97e-491e-aa2e-868d505a3876] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[a3217347-a97e-491e-aa2e-868d505a3876] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[a3217347-a97e-491e-aa2e-868d505a3876] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[a3217347-a97e-491e-aa2e-868d505a3876] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[a3217347-a97e-491e-aa2e-868d505a3876] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[a3217347-a97e-491e-aa2e-868d505a3876] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[a3217347-a97e-491e-aa2e-868d505a3876] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[a3217347-a97e-491e-aa2e-868d505a3876] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[a3217347-a97e-491e-aa2e-868d505a3876] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[a3217347-a97e-491e-aa2e-868d505a3876] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[a3217347-a97e-491e-aa2e-868d505a3876] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-17T17:15:11.867537 #17240]  INFO -- : [078184f8-5b7e-4fe0-9471-f3aac465b31f] Started GET "/system/questions/images/000/000/066/original/10.PNG?1502838750" for 127.0.0.1 at 2017-08-17 17:15:11 -0600
+F, [2017-08-17T17:15:11.868542 #17240] FATAL -- : [078184f8-5b7e-4fe0-9471-f3aac465b31f]   
+F, [2017-08-17T17:15:11.868542 #17240] FATAL -- : [078184f8-5b7e-4fe0-9471-f3aac465b31f] ActionController::RoutingError (No route matches [GET] "/system/questions/images/000/000/066/original/10.PNG"):
+F, [2017-08-17T17:15:11.869539 #17240] FATAL -- : [078184f8-5b7e-4fe0-9471-f3aac465b31f]   
+F, [2017-08-17T17:15:11.869539 #17240] FATAL -- : [078184f8-5b7e-4fe0-9471-f3aac465b31f] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[078184f8-5b7e-4fe0-9471-f3aac465b31f] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-17T17:15:11.876545 #17240]  INFO -- : [5d6b2c93-6b3b-4df6-a934-e655d7a30f35] Started GET "/system/questions/images/000/000/068/original/10.PNG?1502839239" for 127.0.0.1 at 2017-08-17 17:15:11 -0600
+F, [2017-08-17T17:15:11.877545 #17240] FATAL -- : [5d6b2c93-6b3b-4df6-a934-e655d7a30f35]   
+F, [2017-08-17T17:15:11.877545 #17240] FATAL -- : [5d6b2c93-6b3b-4df6-a934-e655d7a30f35] ActionController::RoutingError (No route matches [GET] "/system/questions/images/000/000/068/original/10.PNG"):
+F, [2017-08-17T17:15:11.878548 #17240] FATAL -- : [5d6b2c93-6b3b-4df6-a934-e655d7a30f35]   
+F, [2017-08-17T17:15:11.878548 #17240] FATAL -- : [5d6b2c93-6b3b-4df6-a934-e655d7a30f35] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[5d6b2c93-6b3b-4df6-a934-e655d7a30f35] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-17T17:15:14.366548 #17240]  INFO -- : [01d453cc-af29-45c7-b331-5db199af2228] Started GET "/tests" for 127.0.0.1 at 2017-08-17 17:15:14 -0600
+I, [2017-08-17T17:15:14.368552 #17240]  INFO -- : [01d453cc-af29-45c7-b331-5db199af2228] Processing by TestsController#index as HTML
+D, [2017-08-17T17:15:14.620300 #17240] DEBUG -- : [01d453cc-af29-45c7-b331-5db199af2228]   [1m[36mUser Load (118.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2017-08-17T17:15:14.759325 #17240]  INFO -- : [01d453cc-af29-45c7-b331-5db199af2228]   Rendering tests/index.html.erb within layouts/application
+D, [2017-08-17T17:15:14.885181 #17240] DEBUG -- : [01d453cc-af29-45c7-b331-5db199af2228]   [1m[36mTest Load (124.9ms)[0m  [1m[34mSELECT `tests`.* FROM `tests`[0m
+I, [2017-08-17T17:15:15.168916 #17240]  INFO -- : [01d453cc-af29-45c7-b331-5db199af2228]   Rendered tests/index.html.erb within layouts/application (409.6ms)
+I, [2017-08-17T17:15:15.176915 #17240]  INFO -- : [01d453cc-af29-45c7-b331-5db199af2228] Completed 200 OK in 808ms (Views: 75.4ms | ActiveRecord: 506.8ms)
+I, [2017-08-17T17:15:17.767578 #17240]  INFO -- : [4ef6caf6-54d0-4d5b-9e84-25d0b3a7df50] Started GET "/" for 127.0.0.1 at 2017-08-17 17:15:17 -0600
+I, [2017-08-17T17:15:17.768577 #17240]  INFO -- : [4ef6caf6-54d0-4d5b-9e84-25d0b3a7df50] Processing by IndexController#home as HTML
+I, [2017-08-17T17:15:17.770578 #17240]  INFO -- : [4ef6caf6-54d0-4d5b-9e84-25d0b3a7df50]   Rendering index/home.html.erb within layouts/application
+I, [2017-08-17T17:15:17.772580 #17240]  INFO -- : [4ef6caf6-54d0-4d5b-9e84-25d0b3a7df50]   Rendered index/home.html.erb within layouts/application (2.0ms)
+D, [2017-08-17T17:15:18.002712 #17240] DEBUG -- : [4ef6caf6-54d0-4d5b-9e84-25d0b3a7df50]   [1m[36mUser Load (112.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2017-08-17T17:15:18.009207 #17240]  INFO -- : [4ef6caf6-54d0-4d5b-9e84-25d0b3a7df50] Completed 200 OK in 240ms (Views: 126.2ms | ActiveRecord: 112.1ms)
+I, [2017-08-17T17:18:56.021105 #17240]  INFO -- : [9cd82f3d-5a86-4b64-9253-df475286a8e6] Started GET "/students" for 127.0.0.1 at 2017-08-17 17:18:56 -0600
+I, [2017-08-17T17:18:56.021105 #17240]  INFO -- : [9cd82f3d-5a86-4b64-9253-df475286a8e6] Processing by StudentsController#index as HTML
+D, [2017-08-17T17:18:56.284073 #17240] DEBUG -- : [9cd82f3d-5a86-4b64-9253-df475286a8e6]   [1m[36mUser Load (125.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+D, [2017-08-17T17:18:57.169067 #17240] DEBUG -- : [9cd82f3d-5a86-4b64-9253-df475286a8e6]   [1m[36mStudent Load (883.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-08-17T17:18:57.299794 #17240]  INFO -- : [9cd82f3d-5a86-4b64-9253-df475286a8e6]   Rendering students/index.html.erb within layouts/application
+I, [2017-08-17T17:18:57.309303 #17240]  INFO -- : [9cd82f3d-5a86-4b64-9253-df475286a8e6]   Rendered students/index.html.erb within layouts/application (9.0ms)
+I, [2017-08-17T17:18:57.312805 #17240]  INFO -- : [9cd82f3d-5a86-4b64-9253-df475286a8e6] Completed 200 OK in 1291ms (Views: 52.8ms | ActiveRecord: 1008.6ms)
+I, [2017-08-17T17:19:05.600265 #17240]  INFO -- : [894121fb-0313-4660-b724-2d6cbc744fce] Started GET "/questions" for 127.0.0.1 at 2017-08-17 17:19:05 -0600
+I, [2017-08-17T17:19:05.602267 #17240]  INFO -- : [894121fb-0313-4660-b724-2d6cbc744fce] Processing by QuestionsController#index as HTML
+I, [2017-08-17T17:19:05.612274 #17240]  INFO -- : [19229724-df91-4f9e-b28c-d4639adb5a92] Started GET "/system/questions/images/000/000/066/original/10.PNG?1502838750" for 127.0.0.1 at 2017-08-17 17:19:05 -0600
+F, [2017-08-17T17:19:05.613276 #17240] FATAL -- : [19229724-df91-4f9e-b28c-d4639adb5a92]   
+F, [2017-08-17T17:19:05.614276 #17240] FATAL -- : [19229724-df91-4f9e-b28c-d4639adb5a92] ActionController::RoutingError (No route matches [GET] "/system/questions/images/000/000/066/original/10.PNG"):
+F, [2017-08-17T17:19:05.614276 #17240] FATAL -- : [19229724-df91-4f9e-b28c-d4639adb5a92]   
+F, [2017-08-17T17:19:05.614276 #17240] FATAL -- : [19229724-df91-4f9e-b28c-d4639adb5a92] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[19229724-df91-4f9e-b28c-d4639adb5a92] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[19229724-df91-4f9e-b28c-d4639adb5a92] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[19229724-df91-4f9e-b28c-d4639adb5a92] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[19229724-df91-4f9e-b28c-d4639adb5a92] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[19229724-df91-4f9e-b28c-d4639adb5a92] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[19229724-df91-4f9e-b28c-d4639adb5a92] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[19229724-df91-4f9e-b28c-d4639adb5a92] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[19229724-df91-4f9e-b28c-d4639adb5a92] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[19229724-df91-4f9e-b28c-d4639adb5a92] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[19229724-df91-4f9e-b28c-d4639adb5a92] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[19229724-df91-4f9e-b28c-d4639adb5a92] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[19229724-df91-4f9e-b28c-d4639adb5a92] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[19229724-df91-4f9e-b28c-d4639adb5a92] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[19229724-df91-4f9e-b28c-d4639adb5a92] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[19229724-df91-4f9e-b28c-d4639adb5a92] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[19229724-df91-4f9e-b28c-d4639adb5a92] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[19229724-df91-4f9e-b28c-d4639adb5a92] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[19229724-df91-4f9e-b28c-d4639adb5a92] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[19229724-df91-4f9e-b28c-d4639adb5a92] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-17T17:19:05.627286 #17240]  INFO -- : [a49766cd-051e-4fcf-9aa6-116c94278575] Started GET "/system/questions/images/000/000/067/original/66.PNG?1502839100" for 127.0.0.1 at 2017-08-17 17:19:05 -0600
+F, [2017-08-17T17:19:05.628287 #17240] FATAL -- : [a49766cd-051e-4fcf-9aa6-116c94278575]   
+F, [2017-08-17T17:19:05.628287 #17240] FATAL -- : [a49766cd-051e-4fcf-9aa6-116c94278575] ActionController::RoutingError (No route matches [GET] "/system/questions/images/000/000/067/original/66.PNG"):
+F, [2017-08-17T17:19:05.628287 #17240] FATAL -- : [a49766cd-051e-4fcf-9aa6-116c94278575]   
+F, [2017-08-17T17:19:05.628787 #17240] FATAL -- : [a49766cd-051e-4fcf-9aa6-116c94278575] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[a49766cd-051e-4fcf-9aa6-116c94278575] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[a49766cd-051e-4fcf-9aa6-116c94278575] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[a49766cd-051e-4fcf-9aa6-116c94278575] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[a49766cd-051e-4fcf-9aa6-116c94278575] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[a49766cd-051e-4fcf-9aa6-116c94278575] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[a49766cd-051e-4fcf-9aa6-116c94278575] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[a49766cd-051e-4fcf-9aa6-116c94278575] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[a49766cd-051e-4fcf-9aa6-116c94278575] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[a49766cd-051e-4fcf-9aa6-116c94278575] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[a49766cd-051e-4fcf-9aa6-116c94278575] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[a49766cd-051e-4fcf-9aa6-116c94278575] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[a49766cd-051e-4fcf-9aa6-116c94278575] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[a49766cd-051e-4fcf-9aa6-116c94278575] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[a49766cd-051e-4fcf-9aa6-116c94278575] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[a49766cd-051e-4fcf-9aa6-116c94278575] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[a49766cd-051e-4fcf-9aa6-116c94278575] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[a49766cd-051e-4fcf-9aa6-116c94278575] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[a49766cd-051e-4fcf-9aa6-116c94278575] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[a49766cd-051e-4fcf-9aa6-116c94278575] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-17T17:19:05.640294 #17240]  INFO -- : [008f57ce-6037-490a-ace2-11e85a518b02] Started GET "/system/questions/images/000/000/068/original/10.PNG?1502839239" for 127.0.0.1 at 2017-08-17 17:19:05 -0600
+F, [2017-08-17T17:19:05.640795 #17240] FATAL -- : [008f57ce-6037-490a-ace2-11e85a518b02]   
+F, [2017-08-17T17:19:05.641799 #17240] FATAL -- : [008f57ce-6037-490a-ace2-11e85a518b02] ActionController::RoutingError (No route matches [GET] "/system/questions/images/000/000/068/original/10.PNG"):
+F, [2017-08-17T17:19:05.641799 #17240] FATAL -- : [008f57ce-6037-490a-ace2-11e85a518b02]   
+F, [2017-08-17T17:19:05.641799 #17240] FATAL -- : [008f57ce-6037-490a-ace2-11e85a518b02] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[008f57ce-6037-490a-ace2-11e85a518b02] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[008f57ce-6037-490a-ace2-11e85a518b02] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[008f57ce-6037-490a-ace2-11e85a518b02] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[008f57ce-6037-490a-ace2-11e85a518b02] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[008f57ce-6037-490a-ace2-11e85a518b02] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[008f57ce-6037-490a-ace2-11e85a518b02] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[008f57ce-6037-490a-ace2-11e85a518b02] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[008f57ce-6037-490a-ace2-11e85a518b02] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[008f57ce-6037-490a-ace2-11e85a518b02] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[008f57ce-6037-490a-ace2-11e85a518b02] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[008f57ce-6037-490a-ace2-11e85a518b02] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[008f57ce-6037-490a-ace2-11e85a518b02] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[008f57ce-6037-490a-ace2-11e85a518b02] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[008f57ce-6037-490a-ace2-11e85a518b02] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[008f57ce-6037-490a-ace2-11e85a518b02] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[008f57ce-6037-490a-ace2-11e85a518b02] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[008f57ce-6037-490a-ace2-11e85a518b02] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[008f57ce-6037-490a-ace2-11e85a518b02] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[008f57ce-6037-490a-ace2-11e85a518b02] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+D, [2017-08-17T17:19:05.885681 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mUser Load (148.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2017-08-17T17:19:05.888684 #17240]  INFO -- : [894121fb-0313-4660-b724-2d6cbc744fce]   Rendering questions/index.html.erb within layouts/application
+D, [2017-08-17T17:19:06.022134 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mQuestion Load (132.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+D, [2017-08-17T17:19:06.128359 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mClassification Load (93.7ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m
+I, [2017-08-17T17:19:06.229970 #17240]  INFO -- : [33381ed8-9dd1-434a-9ef3-77d81175ecd8] Started GET "/classifications" for 127.0.0.1 at 2017-08-17 17:19:06 -0600
+I, [2017-08-17T17:19:06.231473 #17240]  INFO -- : [33381ed8-9dd1-434a-9ef3-77d81175ecd8] Processing by ClassificationsController#index as HTML
+D, [2017-08-17T17:19:06.239976 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mClassification Load (108.6ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m
+D, [2017-08-17T17:19:06.242484 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.244486 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.246488 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+I, [2017-08-17T17:19:06.254490 #17240]  INFO -- : [1701f8ad-831e-4906-92ad-6aedd59f341a] Started GET "/system/questions/images/000/000/066/original/10.PNG?1502838750" for 127.0.0.1 at 2017-08-17 17:19:06 -0600
+I, [2017-08-17T17:19:06.254490 #17240]  INFO -- : [469ea2dc-c0b8-4b82-89a8-f9532ae8798c] Started GET "/system/questions/images/000/000/067/original/66.PNG?1502839100" for 127.0.0.1 at 2017-08-17 17:19:06 -0600
+F, [2017-08-17T17:19:06.255491 #17240] FATAL -- : [1701f8ad-831e-4906-92ad-6aedd59f341a]   
+F, [2017-08-17T17:19:06.256492 #17240] FATAL -- : [469ea2dc-c0b8-4b82-89a8-f9532ae8798c]   
+F, [2017-08-17T17:19:06.257493 #17240] FATAL -- : [1701f8ad-831e-4906-92ad-6aedd59f341a] ActionController::RoutingError (No route matches [GET] "/system/questions/images/000/000/066/original/10.PNG"):
+F, [2017-08-17T17:19:06.257493 #17240] FATAL -- : [469ea2dc-c0b8-4b82-89a8-f9532ae8798c] ActionController::RoutingError (No route matches [GET] "/system/questions/images/000/000/067/original/66.PNG"):
+F, [2017-08-17T17:19:06.257493 #17240] FATAL -- : [1701f8ad-831e-4906-92ad-6aedd59f341a]   
+F, [2017-08-17T17:19:06.257493 #17240] FATAL -- : [469ea2dc-c0b8-4b82-89a8-f9532ae8798c]   
+F, [2017-08-17T17:19:06.257493 #17240] FATAL -- : [1701f8ad-831e-4906-92ad-6aedd59f341a] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[1701f8ad-831e-4906-92ad-6aedd59f341a] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+F, [2017-08-17T17:19:06.258499 #17240] FATAL -- : [469ea2dc-c0b8-4b82-89a8-f9532ae8798c] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[469ea2dc-c0b8-4b82-89a8-f9532ae8798c] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-17T17:19:06.270584 #17240]  INFO -- : [5e556dba-4b62-48d2-a974-5c09c034ee5b] Started GET "/system/questions/images/000/000/068/original/10.PNG?1502839239" for 127.0.0.1 at 2017-08-17 17:19:06 -0600
+F, [2017-08-17T17:19:06.271578 #17240] FATAL -- : [5e556dba-4b62-48d2-a974-5c09c034ee5b]   
+F, [2017-08-17T17:19:06.271578 #17240] FATAL -- : [5e556dba-4b62-48d2-a974-5c09c034ee5b] ActionController::RoutingError (No route matches [GET] "/system/questions/images/000/000/068/original/10.PNG"):
+F, [2017-08-17T17:19:06.271578 #17240] FATAL -- : [5e556dba-4b62-48d2-a974-5c09c034ee5b]   
+F, [2017-08-17T17:19:06.271578 #17240] FATAL -- : [5e556dba-4b62-48d2-a974-5c09c034ee5b] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[5e556dba-4b62-48d2-a974-5c09c034ee5b] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+D, [2017-08-17T17:19:06.344981 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mClassification Load (93.5ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m
+D, [2017-08-17T17:19:06.349988 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.353990 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.359998 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.365000 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.370999 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.377009 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (1.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.380005 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.382006 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.384007 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.387007 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (1.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.389009 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.392013 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.394015 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.396016 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.398017 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.400017 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.402022 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.405023 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (1.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.407024 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.409023 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.410024 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.412026 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.413026 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.414027 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.416028 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.417028 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.419031 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.421029 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.423030 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.425034 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (1.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.426539 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.428039 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.429040 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.430540 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.432042 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.433045 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.434545 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.436546 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.438547 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.440548 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.441550 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.443553 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.444553 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.445555 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.447555 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.448556 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.449557 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.451562 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.453558 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.455562 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.457564 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.459564 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.460565 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.461565 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.463567 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.464567 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.466569 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.467567 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.469572 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.472576 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.474574 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.476575 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.477575 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.478576 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.480577 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (1.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.481578 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.483580 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (1.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.484580 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+D, [2017-08-17T17:19:06.486584 #17240] DEBUG -- : [894121fb-0313-4660-b724-2d6cbc744fce]   [1m[36mCACHE Classification Load (0.0ms)[0m  [1m[34mSELECT  `classifications`.* FROM `classifications` WHERE `classifications`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+I, [2017-08-17T17:19:06.487584 #17240]  INFO -- : [894121fb-0313-4660-b724-2d6cbc744fce]   Rendered questions/index.html.erb within layouts/application (598.9ms)
+I, [2017-08-17T17:19:06.491585 #17240]  INFO -- : [894121fb-0313-4660-b724-2d6cbc744fce] Completed 200 OK in 888ms (Views: 169.4ms | ActiveRecord: 582.5ms)
+D, [2017-08-17T17:19:06.672880 #17240] DEBUG -- : [33381ed8-9dd1-434a-9ef3-77d81175ecd8]   [1m[35m (100.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+I, [2017-08-17T17:19:06.845711 #17240]  INFO -- : [846c73a6-5ac4-40c3-adf3-fc76f9b68e54] Started GET "/tests" for 127.0.0.1 at 2017-08-17 17:19:06 -0600
+I, [2017-08-17T17:19:06.847709 #17240]  INFO -- : [846c73a6-5ac4-40c3-adf3-fc76f9b68e54] Processing by TestsController#index as HTML
+D, [2017-08-17T17:19:06.864868 #17240] DEBUG -- : [33381ed8-9dd1-434a-9ef3-77d81175ecd8]   [1m[36mUser Load (98.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2017-08-17T17:19:06.866811 #17240]  INFO -- : [33381ed8-9dd1-434a-9ef3-77d81175ecd8]   Rendering classifications/index.html.erb within layouts/application
+D, [2017-08-17T17:19:06.976909 #17240] DEBUG -- : [33381ed8-9dd1-434a-9ef3-77d81175ecd8]   [1m[36mClassification Load (109.1ms)[0m  [1m[34mSELECT `classifications`.* FROM `classifications`[0m
+I, [2017-08-17T17:19:06.979909 #17240]  INFO -- : [33381ed8-9dd1-434a-9ef3-77d81175ecd8]   Rendered classifications/index.html.erb within layouts/application (113.1ms)
+I, [2017-08-17T17:19:06.990917 #17240]  INFO -- : [33381ed8-9dd1-434a-9ef3-77d81175ecd8] Completed 200 OK in 759ms (Views: 14.9ms | ActiveRecord: 308.8ms)
+D, [2017-08-17T17:19:07.059677 #17240] DEBUG -- : [846c73a6-5ac4-40c3-adf3-fc76f9b68e54]   [1m[36mUser Load (116.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2017-08-17T17:19:07.060678 #17240]  INFO -- : [846c73a6-5ac4-40c3-adf3-fc76f9b68e54]   Rendering tests/index.html.erb within layouts/application
+D, [2017-08-17T17:19:07.164864 #17240] DEBUG -- : [846c73a6-5ac4-40c3-adf3-fc76f9b68e54]   [1m[36mTest Load (103.2ms)[0m  [1m[34mSELECT `tests`.* FROM `tests`[0m
+I, [2017-08-17T17:19:07.166864 #17240]  INFO -- : [846c73a6-5ac4-40c3-adf3-fc76f9b68e54]   Rendered tests/index.html.erb within layouts/application (105.2ms)
+I, [2017-08-17T17:19:07.172866 #17240]  INFO -- : [846c73a6-5ac4-40c3-adf3-fc76f9b68e54] Completed 200 OK in 325ms (Views: 8.6ms | ActiveRecord: 219.3ms)
+I, [2017-08-17T17:19:07.759826 #17240]  INFO -- : [7bd6a937-54f4-429a-bcf6-808f681dfb33] Started GET "/careers" for 127.0.0.1 at 2017-08-17 17:19:07 -0600
+I, [2017-08-17T17:19:07.762829 #17240]  INFO -- : [7bd6a937-54f4-429a-bcf6-808f681dfb33] Processing by CareersController#index as HTML
+D, [2017-08-17T17:19:08.104789 #17240] DEBUG -- : [7bd6a937-54f4-429a-bcf6-808f681dfb33]   [1m[36mUser Load (249.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2017-08-17T17:19:08.198360 #17240]  INFO -- : [7bd6a937-54f4-429a-bcf6-808f681dfb33]   Rendering careers/index.html.erb within layouts/application
+D, [2017-08-17T17:19:08.395209 #17240] DEBUG -- : [7bd6a937-54f4-429a-bcf6-808f681dfb33]   [1m[36mCareer Load (137.8ms)[0m  [1m[34mSELECT careers.id, careers.career, tests.indentifier FROM `careers` INNER JOIN `tests` ON `tests`.`id` = `careers`.`test_id`[0m
+I, [2017-08-17T17:19:08.403215 #17240]  INFO -- : [7bd6a937-54f4-429a-bcf6-808f681dfb33]   Rendered careers/index.html.erb within layouts/application (204.9ms)
+I, [2017-08-17T17:19:08.415227 #17240]  INFO -- : [7bd6a937-54f4-429a-bcf6-808f681dfb33] Completed 200 OK in 651ms (Views: 123.0ms | ActiveRecord: 387.1ms)

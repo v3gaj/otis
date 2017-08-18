@@ -13,22 +13,22 @@
 
   <div class="field">
     <%= form.label "Clasificación" %><br>
-    <%= form.select :classification_id, options_for_select(Classification.all.map{|p|[p.description, p.id]}, :selected => form.object.classification_id), prompt: "Seleccionar" %>
+    <%= form.select :classification_id, options_for_select(Classification.all.map{|p|[p.description, p.id]}, :selected => form.object.classification_id), { :include_blank => '' }, :required => true %>
   </div>
   <br>
   <div class="field">
     <%= form.label "Tipo" %><br>
-    <%= form.select :question_type, options_for_select([ "Abierta", "Cerrada"], :selected => form.object.question_type), prompt: "Seleccionar" , class: "content_clear"%>
+    <%= form.select :question_type, options_for_select([ "Abierta", "Cerrada"], :selected => form.object.question_type), { :include_blank => '' }, :required => true , class: "content_clear"%>
   </div>
   <br>
   <div class="field">
     <%= form.label "Identificador" %><br>
-    <%= form.text_field :identifier, id: :question_identifier %>
+    <%= form.text_field :identifier, id: :question_identifier, required: true %>
   </div>
   <br>
   <div class="field">
     <%= form.label "Descripción" %><br>
-    <%= form.text_area :description, id: :question_description %>
+    <%= form.text_area :description, id: :question_description, required: true %>
   </div>
   <br>
   <div class="field">
@@ -37,6 +37,6 @@
   </div>
   <br>
   <div class="actions">
-    <%= form.submit "Editar Pregunta", class: "button" %>
+    <%= form.submit "Agregar", class: "button" %>
   </div>
 <% end %>

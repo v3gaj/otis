@@ -29,7 +29,7 @@ class CareersController < ApplicationController
 
     respond_to do |format|
       if @career.save
-        format.html { redirect_to @career, notice: 'Carrera creada exitosamente.' }
+        format.html { redirect_to careers_path, notice: 'Carrera creada exitosamente.' }
         format.json { render :show, status: :created, location: @career }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class CareersController < ApplicationController
   def update
     respond_to do |format|
       if @career.update(career_params)
-        format.html { redirect_to @career, notice: 'Carrera actualizada exitosamente.' }
+        format.html { redirect_to careers_path, notice: 'Carrera actualizada exitosamente.' }
         format.json { render :show, status: :ok, location: @career }
       else
         format.html { render :edit }

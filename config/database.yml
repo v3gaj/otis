@@ -9,7 +9,7 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password: Juan9173
+  password: 
   host: localhost
 
 production:
@@ -28,3 +28,4 @@ test:
   database: otis_test
 
 
+  

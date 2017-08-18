@@ -12,17 +12,17 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :indentifier %><br>
+    <%= form.label "Identificador" %><br>
     <%= form.text_field :indentifier, id: :test_indentifier %>
   </div>
   <br>
   <div class="field">
-    <%= form.label :description %><br>
+    <%= form.label "Descripcion" %><br>
     <%= form.text_area :description, id: :test_description %>
   </div>
   <br>
   <div class="field">
-    <%= form.label :time %><br>
+    <%= form.label "Tiempo" %><br>
     <%= form.time_select :time, {:include_blank => true, :default => nil} , id: :test_time %>
   </div>
   <br>

@@ -17,8 +17,10 @@ class AnswersController < ApplicationController
   def new
     @question.answers = @question.answers.all
     if @question.question_type === "Abierta" && @question.answers.present?
-      flash[:alert] = "Esta pregunta abierta ya posee una respuesta."
-      redirect_to @question
+      respond_to do |format|
+        format.js {render inline: "location.reload();" }
+      end
+      flash[:notice] = "Esta pregunta abierta ya posee una respuesta."
     else
       @answer = Answer.new
     end
